@@ -44,6 +44,11 @@
 			    .then(data => {
 				console.log(data)
 			    })
+		var ethRecent = fetch("api.coincap.io/v2/assets/ethereum")
+            .then(ethRecentResponse => ethRecentResponse.json())
+            .then(data => {
+                console.log(data)
+            });
 	</script>
 </head>
 
