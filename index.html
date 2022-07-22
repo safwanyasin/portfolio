@@ -38,11 +38,13 @@
 		Favicons
 	-->
 	<link rel="shortcut icon" href="images/favicons/s.JPG">
-	var SandPResponse = fetch("https://query2.finance.yahoo.com/v8/finance/chart/%5EGSPC")
-                    .then(SandPResponse => SandPResponse.json())
-                    .then(data => {
-                        console.log(data)
-                    })
+	<script>
+		var SandPResponse = fetch("https://query2.finance.yahoo.com/v8/finance/chart/%5EGSPC")
+			    .then(SandPResponse => SandPResponse.json())
+			    .then(data => {
+				console.log(data)
+			    })
+	</script>
 </head>
 
 <body>
