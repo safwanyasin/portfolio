@@ -1,0 +1,58 @@
+@import 'mixin';
+.header-top-fixed {
+    .navbar {
+      padding-left: 5rem;
+      padding-right: 5rem;
+
+      @include down-sm {
+        padding-left: 2rem;
+        padding-right: 2rem;
+      }
+    }
+    .main-menu {
+      color: var(--px-white);
+      font-size: 0.8rem;
+      letter-spacing: 1px;
+      font-weight: 500;
+        li a{
+            // text-transform: uppercase;
+            
+            position: relative;
+            cursor: pointer;
+            transition: all 0.4s ease;
+
+            &:hover {
+                color: var(--px-white);
+            }
+            &:before, &:after {
+              content: '';
+              position: absolute;
+              width: 0%;
+              height: 1px;
+              top: 50%;
+              margin-top: -0.5px;
+              background: var(--px-white);
+            }
+
+            &:before {
+              left: -2.5px;
+            }
+            &:after {
+              right: 2.5px;
+              background: var(--px-turquoise);
+              transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+            }
+            &:hover:before {
+              background: var(--px-turquoise);
+              width: 100%;
+              transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+            }
+            &:hover:after {
+              background: transparent;
+              width: 100%;
+              transition: 0s;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+$px-font: 'Source Code Pro', sans-serif !default;
+
+// Theme Variable
+
+$px-theme: #0788ff;
+$px-theme-rgb: 7, 136, 255;
+$px-white: #fff;
+$px-black: #040c16;
+$px-bg: #000;
+$px-turquoise: #40e0d0;
+
+$px-text: #fff;
+$px-heading: #fff;
+
+// Breakpoints
+$px-media-xsm: 567px !default;
+$px-media-sm: 767px !default;
+$px-media-md: 991px !default;
+$px-media-lg: 1200px !default;
