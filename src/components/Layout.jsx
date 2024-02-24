@@ -27,7 +27,7 @@ export default function Layout() {
         <Outlet />
       </main>
       {/* <CustomCursor /> */}
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

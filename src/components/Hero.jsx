@@ -2,7 +2,8 @@
 import React from 'react';
 import { TypeAnimation } from 'react-type-animation';
 import { Link as ScrollLink } from 'react-scroll';
-
+import { getCurrentlyPlayingTracks } from './GetCurrentlyPlayingItem';
+import { SpotifyNowPlaying } from './SpotifyNowPlaying';
 export default function Hero({ data, socialData }) {
   const { imgUrl, name, heading, typingText, typingTextSecondary, description, btnText, btnUrl } =
     data;
@@ -12,8 +13,8 @@ export default function Hero({ data, socialData }) {
           <div className='subhead-small row-auto pb-4 text-center '>
               <h6 >Available for hire & for freelance projects</h6>
           </div>
-          <div className='grid grid-cols-2'>
-          <div className="">
+          <div className='flex'>
+          <div className="header">
             {/* Left hs-text-box */}
             <div className="hs-text-box flex flex-col items-start">
               <h2>
@@ -52,6 +53,8 @@ export default function Hero({ data, socialData }) {
           </div>
 
       </div>
+      <SpotifyNowPlaying />
+      {/* <SpotifyPlayerWrapper /> */}
     </section>
   );
 }
