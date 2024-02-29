@@ -1,0 +1,20 @@
+.html-style-button {
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 40px;
+
+    .hovered1 {
+        translate: translateX(-5px);
+    }
+    .hovered2 {
+        translate: translateX(5px);
+    }
+  }
+  
+  
+  /* Add any additional styling as needed */
+  

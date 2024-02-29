@@ -1,14 +1,20 @@
 import React, { useEffect } from 'react';
-import Hero from '../components/Hero';
+import About from '../components/About';
 import HomePageData from '../data/HomePageData.json';
-export default function Home() {
+export default function AboutMe() {
   const {
-    hero,
     socialBtns,
+    brands,
+    about,
+    projects,
+    service,
+    experience,
+    testimonial,
+    contact,
   } = HomePageData;
   return (
     <>
-      <Hero data={hero} socialData={socialBtns} />
+      <About data={about} />
       {/* <Brands data={brands} />
       <About data={about} />
       <Projects data={projects} />

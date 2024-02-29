@@ -8,6 +8,7 @@ import HomePageData from '../data/HomePageData.json';
 export default function Layout() {
   const {
     hero,
+    logo,
     socialBtns,
     brands,
     about,
@@ -22,7 +23,7 @@ export default function Layout() {
   }, []);
   return (
     <>
-      <Header socialData={socialBtns}/>
+      <Header data={logo}/>
       <main>
         <Outlet />
       </main>

@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
+import { TypeAnimation } from 'react-type-animation';
 import { Link } from 'react-router-dom';
 
-export default function Header() {
+export default function Header({data}) {
   const [activeItem, setActiveItem] = useState(null);
   const [scrolled, setScrolled] = useState(false);
-
    const handleItemClick = (itemName) => {
     setActiveItem(itemName);
   };
@@ -29,13 +29,22 @@ export default function Header() {
       <div className="flex justify-between items-center navbar">
         <div className="logo">
           <Link to="/" className="navbar-brand" href="#">
-            <h6
-              title
-            >safwan.</h6>
+            <h6>
+              <TypeAnimation
+                cursor={false}
+                sequence={data}
+                speed={1}
+                repeat={0}
+              />
+            </h6>
           </Link>
         </div>
         {/* / */}
-        <ul className="main-menu flex">
+        <ul className="main-menu flex"
+        data-aos="fade-down"
+        data-aos-duration="1000"
+        data-aos-delay="500"
+        >
           <li>[ &nbsp; </li>
           <li>
             <Link

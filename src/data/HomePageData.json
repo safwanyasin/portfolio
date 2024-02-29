@@ -1,9 +1,11 @@
 {
+    "logo": [1000, "Safwan."],
     "hero": {
       "imgUrl": "/images/home-banner.png",
+      
       "name": "M Safwan Yasin",
-      "typingText": [2000, "software", 2000, "Web", 2000, "App", 2000],
-      "typingTextSecondary": [2000, "Developer"],
+      "typingText": [1000, "software", 1000, "Web", 1000, "App", 1000],
+      "typingTextSecondary": [1000, "Developer"],
       "description": "Yet bed any for travelling assistance indulgence unpleasing. Not thoughts all exercise blessing. Indulgence way everything joy alteration boisterous the attachment.",
       "btnText": "Get in touch",
       "btnUrl": "contactus"
@@ -57,7 +59,7 @@
     ],
     "about": {
       "imgSrc": "/images/about-banner.png",
-      "miniTitle": "About Us",
+      "miniTitle": [1000, "About Me"],
       "title": "I AM AVAILABLE FOR <span>UI UX DESIGN</span> PROJECTS",
       "description": "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.",
       "funfacts": [

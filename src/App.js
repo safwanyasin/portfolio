@@ -4,7 +4,7 @@ import Layout from './components/Layout';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
-import About from './pages/About';
+import AboutMe from './pages/AboutMe';
 
 function App() {
   useEffect(() => {
@@ -16,7 +16,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
-        <Route path="about" element={<About />} />
+        <Route path="about" element={<AboutMe />} />
       </Route>
     </Routes>
   );
