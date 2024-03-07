@@ -1,20 +1,40 @@
 .html-style-button {
-    color: #fff;
-    font-size: 16px;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    margin: 40px;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin: 40px;
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 30px;
+  border: 1px solid white;
 
-    .hovered1 {
-        translate: translateX(-5px);
+  h6 {
+    margin: 0;
+  }
+
+  .hovered1,
+  .hovered2 {
+    display: inline-block;
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &:hover .hovered1 {
+    transform: translateX(-5px);
+    animation: hoverAnimation 1.5s ease-in-out inherit;
+  }
+
+  &:hover .hovered2 {
+    transform: translateX(5px);
+    animation: hoverAnimation 1.5s ease-in-out inherit;
+  }
+
+  @keyframes hoverAnimation {
+    0%, 100% {
+      transform: translateX(0);
     }
-    .hovered2 {
-        translate: translateX(5px);
+    50% {
+      transform: translateX(-10px);
     }
   }
-  
-  
-  /* Add any additional styling as needed */
-  
+}

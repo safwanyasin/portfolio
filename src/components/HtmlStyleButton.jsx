@@ -1,17 +1,46 @@
-import React, { useState } from 'react';
+import React from "react";
+import { motion, useAnimation } from "framer-motion";
 
 const HtmlStyleButton = ({ onPressed, content }) => {
-  const [isHovered, setIsHovered] = useState(false);
+  const controlsL = useAnimation();
+  const controlsR = useAnimation();
+
+  const handleHover = (isHovered) => {
+    controlsL.start({
+      x: isHovered ? -5 : 0,
+      transition: { duration: 1.5, ease: [0.4, 0, 0.2, 1] },
+    });
+    controlsR.start({
+      x: isHovered ? 5 : 0,
+      transition: { duration: 1.5, ease: [0.4, 0, 0.2, 1] },
+    });
+  };
 
   return (
-    <div
-      className='html-style-button flex'
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
+    <motion.div
+      className="html-style-button inline-flex"
+      onHoverStart={() => handleHover(true)}
+      onHoverEnd={() => handleHover(false)}
       onClick={onPressed}
     >
-      <h6 className={`${isHovered ? 'hovered1' : ''}`}>&lt;&nbsp;</h6> <h6>{content}</h6> <h6 className={`${isHovered ? 'hovered' : ''}`}>&nbsp;/&gt;</h6>
-    </div>
+      <motion.div
+        // className="hovered1"
+        animate={controlsL}
+        initial={{ x: 0 }}
+        exit={{ x: 0 }}
+      >
+        <h6>&lt;&nbsp;</h6>
+      </motion.div>
+      <h6>{content}</h6>
+      <motion.div
+        // className="hovered2"
+        animate={controlsR}
+        initial={{ x: 0 }}
+        exit={{ x: 0 }}
+      >
+        <h6>&nbsp;/&gt;</h6>
+      </motion.div>
+    </motion.div>
   );
 };
 

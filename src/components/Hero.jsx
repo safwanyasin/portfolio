@@ -20,7 +20,7 @@
 //           <div className='flex'>
 //           <div className="header">
 //             {/* Left hs-text-box */}
-//             <div 
+//             <div
 //               data-aos="fade-right"
 //               data-aos-duration="1000"
 //               data-aos-delay="500"
@@ -47,7 +47,7 @@
 //            <h6>projects</h6><br/>
 //           </div>
 //           </div>
-          
+
 //           <div className="grid-rows-1">
 //             {/* Right hs-text-box */}
 //             <div className="hs-text-box flex flex-col items-end"
@@ -64,7 +64,7 @@
 //                 />
 //                 <h2 className='bracket'>/&gt;</h2>
 //               </h2>
-              
+
 //             </div>
 //           </div>
 
@@ -75,43 +75,160 @@
 //   );
 // }
 // import { Icon } from '@iconify/react';
-import React from 'react';
-import { TypeAnimation } from 'react-type-animation';
-import { Link as ScrollLink } from 'react-scroll';
-import { getCurrentlyPlayingTracks } from './GetCurrentlyPlayingItem';
-import { SpotifyNowPlaying } from './SpotifyNowPlaying';
-import HtmlStyleButton from './HtmlStyleButton';
+import React from "react";
+import { TypeAnimation } from "react-type-animation";
+import { Link as ScrollLink } from "react-scroll";
+import { getCurrentlyPlayingTracks } from "./GetCurrentlyPlayingItem";
+import { SpotifyNowPlaying } from "./SpotifyNowPlaying";
+import HtmlStyleButton from "./HtmlStyleButton";
+import { motion } from "framer-motion";
+import Stats from "./Stats";
+
+// export default function Hero({ data, socialData }) {
+//   const {
+//     imgUrl,
+//     name,
+//     heading,
+//     typingText,
+//     typingTextSecondary,
+//     description,
+//     btnText,
+//     btnUrl,
+//   } = data;
+//   return (
+//     <section
+//       className="home-section h-screen relative flex overflow-hidden"
+//       id="home"
+//       data-scroll-index={0}
+//     >
+//       <div className="bigBlob">
+//         <Blob />
+//       </div>
+
+//       <div className="w-2/3 mt-auto justify-end items-end">
+//         {/* Left hs-text-box */}
+//         <motion.div
+//           className="flex flex-row items-center mb-5 status"
+//           initial={{ opacity: 0 }}
+//           animate={{ opacity: 1 }}
+//           transition={{
+//             duration: 1,
+//             delay: 2,
+//             ease: "easeInOut",
+//           }}
+//         >
+//           <div class="blob"></div>
+//           <div>
+//             <h6 className="ml-2">Actively looking for work</h6>
+//           </div>
+//         </motion.div>
+//         <div
+//           data-aos="fade-right"
+//           data-aos-duration="1000"
+//           data-aos-delay="500"
+//           className="hs-text-box flex flex-col items-start"
+//         >
+//           <h2>
+//             <h2 className="bracket">&lt;</h2>
+//             <TypeAnimation
+//               item
+//               sequence={typingText}
+//               speed={1}
+//               repeat={Infinity}
+//               cursor={true}
+//             />
+//           </h2>
+//         </div>
+
+//         <BlobSmall />
+//         {/* Right hs-text-box */}
+//         <div
+//           className="hs-text-box flex flex-col items-end"
+//           data-aos="fade-left"
+//           data-aos-duration="1000"
+//           data-aos-delay="500"
+//         >
+//           <h2>
+//             <TypeAnimation
+//               cursor={false}
+//               sequence={typingTextSecondary}
+//               speed={1}
+//             />
+//             <h2 className="bracket">/&gt;</h2>
+//           </h2>
+//         </div>
+//       </div>
+//       <div className="container w-1/3 h-screen">
+//         <h1 className="mt-20">
+//           Hey, I'm Safwan—a tech enthusiast on the verge of completing a
+//           Bachelor's in Computer Science with a finance minor. Currently hunting
+//           for roles in software, frontend and mobile app development, I bring a
+//           blend of creativity and technical skills. Check out my portfolio for a
+//           glimpse of my passion in action!
+//         </h1>
+//         <HtmlStyleButton onPressed={() => {}} content={"contact me"} />
+//         {/* <Stats /> */}
+//       </div>
+//     </section>
+//   );
+// }
 
 export default function Hero({ data, socialData }) {
-  const { imgUrl, name, heading, typingText, typingTextSecondary, description, btnText, btnUrl } =
-    data;
+  const {
+    imgUrl,
+    name,
+    heading,
+    typingText,
+    typingTextSecondary,
+    description,
+    btnText,
+    btnUrl,
+  } = data;
   return (
-    <section className="home-section h-screen relative flex overflow-hidden" id="home" data-scroll-index={0}>
+    <section
+      className="home-section h-screen relative flex overflow-hidden"
+      id="home"
+      data-scroll-index={0}
+    >
+
       <div className="w-2/3 mt-auto justify-end items-end">
         {/* Left hs-text-box */}
-        <div className='flex flex-row items-center status'>
+        <motion.div
+          className="flex flex-row items-center mb-5 status"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{
+            duration: 1,
+            delay: 2,
+            ease: "easeInOut",
+          }}
+        >
           <div class="blob"></div>
-          <div><h6 className='ml-2'>Actively looking for work</h6></div>
-        </div>
-        <div 
+          <div>
+            <h6 className="ml-2">Actively looking for work</h6>
+          </div>
+        </motion.div>
+        <div
           data-aos="fade-right"
           data-aos-duration="1000"
           data-aos-delay="500"
-          className="hs-text-box flex flex-col items-start">
+          className="hs-text-box flex flex-col items-start"
+        >
           <h2>
-            <h2 className='bracket'>&lt;</h2>
+            <h2 className="bracket">&lt;</h2>
             <TypeAnimation
               item
               sequence={typingText}
               speed={1}
               repeat={Infinity}
-              cursor={false}
+              cursor={true}
             />
           </h2>
         </div>
 
         {/* Right hs-text-box */}
-        <div className="hs-text-box flex flex-col items-end"
+        <div
+          className="hs-text-box flex flex-col items-end"
           data-aos="fade-left"
           data-aos-duration="1000"
           data-aos-delay="500"
@@ -121,16 +238,22 @@ export default function Hero({ data, socialData }) {
               cursor={false}
               sequence={typingTextSecondary}
               speed={1}
-              repeat={0}
             />
-            <h2 className='bracket'>/&gt;</h2>
+            <h2 className="bracket">/&gt;</h2>
           </h2>
         </div>
       </div>
-      <div className='container w-1/3 h-screen'>
-        <h1 >hello there</h1>
-        <HtmlStyleButton onPressed={() => {}} content={'contact me'} />
+      <div className="container w-1/3 h-screen">
+        <h1 className="mt-20">
+          Hey, I'm Safwan—a tech enthusiast on the verge of completing a
+          Bachelor's in Computer Science with a finance minor. Currently hunting
+          for roles in software, frontend and mobile app development, I bring a
+          blend of creativity and technical skills. Check out my portfolio for a
+          glimpse of my passion in action!
+        </h1>
+        <HtmlStyleButton onPressed={() => {}} content={"contact me"} />
+        {/* <Stats /> */}
       </div>
-    </section> 
+    </section>
   );
 }

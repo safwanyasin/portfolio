@@ -1,5 +1,6 @@
 @import 'mixin';
 .header-top-fixed {
+    border-bottom: 0.5px solid rgba($color: #fff, $alpha: 0.5);
     .navbar {
       padding-left: 5rem;
       padding-right: 5rem;

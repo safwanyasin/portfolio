@@ -1,11 +1,12 @@
-import React, { useState, useEffect } from 'react';
-import { TypeAnimation } from 'react-type-animation';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from "react";
+import { TypeAnimation } from "react-type-animation";
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
-export default function Header({data}) {
+export default function Header({ data }) {
   const [activeItem, setActiveItem] = useState(null);
   const [scrolled, setScrolled] = useState(false);
-   const handleItemClick = (itemName) => {
+  const handleItemClick = (itemName) => {
     setActiveItem(itemName);
   };
   useEffect(() => {
@@ -17,34 +18,28 @@ export default function Header({data}) {
         setScrolled(false);
       }
     };
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
   return (
-    <div
-      className={`header-top-fixed one-page-nav fixed top-0 left-0 right-0 py-4 z-50 bg-transparent transition-all ease duration-300 ${scrolled ? 'fixed-header bg-opacity-90 blur-md' : ''}`}
+    <motion.div
+      className={`header-top-fixed one-page-nav fixed top-0 left-0 right-0 py-4 z-50 bg-transparent transition-all ease duration-300 ${
+        scrolled ? "fixed-header bg-opacity-90 blur-md" : ""
+      }`}
+      animate={{ y: 0 }}
+      initial={{ y: -75 }}
+      transition={{ duration: 0.5, ease: "linear" }}
     >
       <div className="flex justify-between items-center navbar">
         <div className="logo">
           <Link to="/" className="navbar-brand" href="#">
-            <h6>
-              <TypeAnimation
-                cursor={false}
-                sequence={data}
-                speed={1}
-                repeat={0}
-              />
-            </h6>
+            <h6>Safwan.</h6>
           </Link>
         </div>
         {/* / */}
-        <ul className="main-menu flex"
-        data-aos="fade-down"
-        data-aos-duration="1000"
-        data-aos-delay="500"
-        >
+        <ul className="main-menu flex">
           <li>[ &nbsp; </li>
           <li>
             <Link
@@ -53,7 +48,7 @@ export default function Header({data}) {
               smooth={true}
               offset={-80}
               duration={500}
-              onMouseEnter={() => handleItemClick('about')}
+              onMouseEnter={() => handleItemClick("about")}
             >
               about
             </Link>
@@ -66,7 +61,7 @@ export default function Header({data}) {
               smooth={true}
               offset={-80}
               duration={500}
-              onMouseEnter={() => handleItemClick('projects')}
+              onMouseEnter={() => handleItemClick("projects")}
             >
               projects
             </Link>
@@ -79,7 +74,7 @@ export default function Header({data}) {
               smooth={true}
               offset={-80}
               duration={500}
-              onMouseEnter={() => handleItemClick('contact')}
+              onMouseEnter={() => handleItemClick("contact")}
             >
               contact
             </Link>
@@ -94,7 +89,7 @@ export default function Header({data}) {
               smooth={true}
               offset={-80}
               duration={500}
-              onMouseEnter={() => handleItemClick('about')}
+              onMouseEnter={() => handleItemClick("about")}
             >
               about
             </Link>
@@ -106,7 +101,7 @@ export default function Header({data}) {
               smooth={true}
               offset={-80}
               duration={500}
-              onMouseEnter={() => handleItemClick('projects')}
+              onMouseEnter={() => handleItemClick("projects")}
             >
               projects
             </Link>
@@ -118,13 +113,13 @@ export default function Header({data}) {
               smooth={true}
               offset={-80}
               duration={500}
-              onMouseEnter={() => handleItemClick('contact')}
+              onMouseEnter={() => handleItemClick("contact")}
             >
               contact
             </Link>
           </li>
         </ul>
       </div>
-    </div>
+    </motion.div>
   );
 }
