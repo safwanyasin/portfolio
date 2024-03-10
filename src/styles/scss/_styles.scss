@@ -133,9 +133,6 @@ body {
 
 .home-section {
   // height: 100vh;t
-  .bigBlob {
-    transform: scale(0.5);
-  }
   .blob {
     background: red;
     border-radius: 50%;
@@ -235,5 +232,63 @@ body {
     display: block;
     // text-transform: uppercase;
     color: var(--px-turquoise);
+  }
+}
+.ambienceBL {
+  position: fixed;
+  bottom: -500px;
+  left: -500px;
+  transform: scale(2);
+  z-index: -5;
+  @include down-lg {
+    transform: scale(1);
+  }
+  @include down-sm {
+    transform: scale(0.75);
+  }
+}
+.ambienceTR {
+  position: fixed;
+  top: -600px;
+  right: -600px;
+  transform: scale(2);
+  z-index: -5;
+  @include down-lg {
+    transform: scale(1);
+  }
+  @include down-sm {
+    transform: scale(0.75);
+    right: -400px;
+  }
+}
+.ambienceTC {
+  position: fixed;
+  top: -600px;
+  // left: -200px;
+  transform: scaleX(3);
+  z-index: -5;
+  @include down-lg {
+    transform: scaleX(1);
+  }
+  @include down-sm {
+    transform: scale(0.75);
+    left: -200px;
+  }
+}
+.blob3d {
+  position: fixed;
+  top: 20%;
+  right: -70px;
+  transform: scale(0.6);
+  @include down-lg {
+    right: -200px;
+  }
+}
+.blob3dSmall {
+  position: fixed;
+  top: 30%;
+  left: 0;
+  @include down-sm {
+    top: 15%;
   }
 }

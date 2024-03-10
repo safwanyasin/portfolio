@@ -3,12 +3,14 @@ import { TypeAnimation } from "react-type-animation";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
-export default function Header({ data }) {
+const Header = ({ data }) => {
   const [activeItem, setActiveItem] = useState(null);
   const [scrolled, setScrolled] = useState(false);
+
   const handleItemClick = (itemName) => {
     setActiveItem(itemName);
   };
+
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
@@ -23,6 +25,7 @@ export default function Header({ data }) {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
   return (
     <motion.div
       className={`header-top-fixed one-page-nav fixed top-0 left-0 right-0 py-4 z-50 bg-transparent transition-all ease duration-300 ${
@@ -34,92 +37,119 @@ export default function Header({ data }) {
     >
       <div className="flex justify-between items-center navbar">
         <div className="logo">
-          <Link to="/" className="navbar-brand" href="#">
+          <Link to="/" className="navbar-brand">
             <h6>Safwan.</h6>
           </Link>
         </div>
-        {/* / */}
-        <ul className="main-menu flex">
-          <li>[ &nbsp; </li>
-          <li>
-            <Link
-              to="/about"
-              spy={true}
-              smooth={true}
-              offset={-80}
-              duration={500}
-              onMouseEnter={() => handleItemClick("about")}
-            >
-              about
-            </Link>
-          </li>
-          <li>,&nbsp;</li>
-          <li>
-            <Link
-              to="/projects"
-              spy={true}
-              smooth={true}
-              offset={-80}
-              duration={500}
-              onMouseEnter={() => handleItemClick("projects")}
-            >
-              projects
-            </Link>
-          </li>
-          <li>,&nbsp;</li>
-          <li>
-            <Link
-              to="/contact"
-              spy={true}
-              smooth={true}
-              offset={-80}
-              duration={500}
-              onMouseEnter={() => handleItemClick("contact")}
-            >
-              contact
-            </Link>
-          </li>
-          <li>&nbsp; ]</li>
-        </ul>
-        <ul className="main-menu-small">
-          <li>
-            <Link
-              to="/about"
-              spy={true}
-              smooth={true}
-              offset={-80}
-              duration={500}
-              onMouseEnter={() => handleItemClick("about")}
-            >
-              about
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/projects"
-              spy={true}
-              smooth={true}
-              offset={-80}
-              duration={500}
-              onMouseEnter={() => handleItemClick("projects")}
-            >
-              projects
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/contact"
-              spy={true}
-              smooth={true}
-              offset={-80}
-              duration={500}
-              onMouseEnter={() => handleItemClick("contact")}
-            >
-              contact
-            </Link>
-          </li>
-        </ul>
+
+        <div className="flex">
+          <ul className="main-menu flex">
+            <li>
+              <Link
+                to="/about"
+                spy={true}
+                smooth={true}
+                offset={-80}
+                duration={500}
+                onMouseEnter={() => handleItemClick("about")}
+              >
+                about
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/projects"
+                spy={true}
+                smooth={true}
+                offset={-80}
+                duration={500}
+                onMouseEnter={() => handleItemClick("projects")}
+              >
+                projects
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/contact"
+                spy={true}
+                smooth={true}
+                offset={-80}
+                duration={500}
+                onMouseEnter={() => handleItemClick("contact")}
+              >
+                contact
+              </Link>
+            </li>
+          </ul>
+          <ul className="main-menu-small flex">
+            <li>
+              <Link
+                to="/about"
+                spy={true}
+                smooth={true}
+                offset={-80}
+                duration={500}
+                onMouseEnter={() => handleItemClick("about")}
+              >
+                about
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/projects"
+                spy={true}
+                smooth={true}
+                offset={-80}
+                duration={500}
+                onMouseEnter={() => handleItemClick("projects")}
+              >
+                projects
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/contact"
+                spy={true}
+                smooth={true}
+                offset={-80}
+                duration={500}
+                onMouseEnter={() => handleItemClick("contact")}
+              >
+                contact
+              </Link>
+            </li>
+          </ul>
+          <div className="vertical-line"></div>
+          <ul className="socials flex">
+            <li>
+              <a
+                href="https://www.linkedin.com/in/safwanyasin"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i
+                  className="fab fa-linkedin fa-lg"
+                  style={{ color: "#fff" }}
+                ></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/safwanyasin"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i
+                  className="fab fa-github fa-lg"
+                  style={{ color: "#fff" }}
+                ></i>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </motion.div>
   );
-}
+};
+
+export default Header;

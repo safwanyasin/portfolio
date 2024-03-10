@@ -1,7 +1,7 @@
 // BackgroundContainer.js
 
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 const BackgroundContainer = styled.div`
   position: fixed;
@@ -10,6 +10,8 @@ const BackgroundContainer = styled.div`
   bottom: 0;
   left: 0;
   z-index: -1; /* Ensure the background is behind the content */
+  width: 100vw;
+  height: 100vh;
   /* Add your spline components or any other styling */
 `;
 

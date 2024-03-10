@@ -1,80 +1,112 @@
-@import 'mixin';
+@import "mixin";
+
 .header-top-fixed {
-    border-bottom: 0.5px solid rgba($color: #fff, $alpha: 0.5);
-    .navbar {
-      padding-left: 5rem;
-      padding-right: 5rem;
-      max-width: 1500px;
-      margin: auto;
-      @include down-sm {
-        padding-left: 2rem;
-        padding-right: 2rem;
-      }
-    }
-    .logo {
-      h6 {
-        font-size: 1.5rem;
-        font-weight: 600;
-      }
-    }
-    .main-menu {
+  position: fixed;
+  display: block;
+  top: 20px;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  z-index: 1000;
+  padding: 0;
 
-      @include down-xsm {
-          display: none;
-      }
+  .navbar {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 1500px;
+    @include down-sm {
+      padding-left: 2rem;
+      padding-right: 2rem;
     }
-    .main-menu-small {
+  }
+
+  .logo {
+    h6 {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+  }
+
+  .socials {
+    li a {
+      margin-left: 20px;
+    }
+  }
+  .vertical-line {
+    border: 1px solid var(--px-white);
+    margin-top: 2px;
+    margin-bottom: 2px;
+    opacity: 0.5;
+  }
+
+  .main-menu {
+    margin-right: 20px;
+    @include down-xsm {
       display: none;
-      flex-direction: column;
-      
-      @include down-xsm {
-        display: flex;
+    }
+  }
+
+  .main-menu-small {
+    display: none;
+    flex-direction: column;
+
+    @include down-xsm {
+      display: flex;
+    }
+  }
+
+  .main-menu,
+  .main-menu-small {
+    color: var(--px-white);
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    // font-weight: 500;
+
+    li a {
+      margin-left: 10px;
+      position: relative;
+      cursor: pointer;
+      transition: all 0.4s ease;
+
+      &:hover {
+        color: var(--px-white);
+      }
+      &:before,
+      &:after {
+        content: "";
+        position: absolute;
+        width: 0%;
+        height: 1px;
+        top: 50%;
+        margin-top: -0.5px;
+        background: var(--px-white);
+      }
+
+      &:before {
+        left: -2.5px;
+      }
+      &:after {
+        right: 2.5px;
+        background: var(--px-turquoise);
+        transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+      }
+      &:hover:before {
+        background: var(--px-turquoise);
+        width: 100%;
+        transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+      }
+      &:hover:after {
+        background: transparent;
+        width: 100%;
+        transition: 0s;
       }
     }
-    .main-menu, .main-menu-small {
-      color: var(--px-white);
-      font-size: 1rem;
-      letter-spacing: 1px;
-      font-weight: 500;
-      li a{
-        // text-transform: uppercase;
-        
-        position: relative;
-        cursor: pointer;
-        transition: all 0.4s ease;
-
-        &:hover {
-            color: var(--px-white);
-        }
-        &:before, &:after {
-          content: '';
-          position: absolute;
-          width: 0%;
-          height: 1px;
-          top: 50%;
-          margin-top: -0.5px;
-          background: var(--px-white);
-        }
-
-        &:before {
-          left: -2.5px;
-        }
-        &:after {
-          right: 2.5px;
-          background: var(--px-turquoise);
-          transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
-        }
-        &:hover:before {
-          background: var(--px-turquoise);
-          width: 100%;
-          transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
-        }
-        &:hover:after {
-          background: transparent;
-          width: 100%;
-          transition: 0s;
-        }
-    }
-    }
-
+  }
 }
