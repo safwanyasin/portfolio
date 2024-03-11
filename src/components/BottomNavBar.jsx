@@ -11,6 +11,26 @@ const BottomNavBar = ({ data }) => {
 
   const iconPath = process.env.PUBLIC_URL + "/nav-bar-icons/";
 
+  // Define an array of navbar items with their corresponding icons, links, and alt text
+  const navbarItems = [
+    { id: "home", icon: "home.svg", link: "/", alt: "Home" },
+    { id: "about", icon: "about.svg", link: "/about", alt: "About" },
+    { id: "projects", icon: "work.svg", link: "/projects", alt: "Projects" },
+    { id: "contact", icon: "contact.svg", link: "/contact", alt: "Contact" },
+    {
+      id: "linkedin",
+      icon: "linkedin.svg",
+      link: "https://www.linkedin.com/in/safwanyasin",
+      alt: "LinkedIn",
+    },
+    {
+      id: "github",
+      icon: "github.svg",
+      link: "https://www.github.com/safwanyasin",
+      alt: "GitHub",
+    },
+  ];
+
   return (
     <motion.div
       className={`bottom-nav-bar py-4 z-50 transition-all ease duration-300`}
@@ -20,100 +40,24 @@ const BottomNavBar = ({ data }) => {
     >
       <div className="block navbar">
         <ul className="flex justify-between items-center">
-          <li>
-            <Link
-              to="/"
-              spy={true}
-              smooth={true}
-              offset={-80}
-              duration={500}
-              onMouseEnter={() => handleItemClick("home")}
-            >
-              <img
-                src={iconPath + "home.svg"}
-                alt="Home"
-                className="nav-icon"
-              />
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/about"
-              spy={true}
-              smooth={true}
-              offset={-80}
-              duration={500}
-              onMouseEnter={() => handleItemClick("about")}
-            >
-              <img
-                src={iconPath + "about.svg"}
-                alt="About"
-                className="nav-icon"
-              />
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/projects"
-              spy={true}
-              smooth={true}
-              offset={-80}
-              duration={500}
-              onMouseEnter={() => handleItemClick("projects")}
-            >
-              <img
-                src={iconPath + "work.svg"}
-                alt="Projects"
-                className="nav-icon"
-              />
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/contact"
-              spy={true}
-              smooth={true}
-              offset={-80}
-              duration={500}
-              onMouseEnter={() => handleItemClick("contact")}
-            >
-              <img
-                src={iconPath + "contact.svg"}
-                alt="Contact"
-                className="nav-icon"
-              />
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="https://www.linkedin.com/in/safwanyasin"
-              spy={true}
-              smooth={true}
-              offset={-80}
-              duration={500}
-            >
-              <img
-                src={iconPath + "linkedin.svg"}
-                alt="LinkedIn"
-                className="nav-icon"
-              />
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="https://www.github.com/safwanyasin"
-              spy={true}
-              smooth={true}
-              offset={-80}
-              duration={500}
-            >
-              <img
-                src={iconPath + "github.svg"}
-                alt="Github"
-                className="nav-icon"
-              />
-            </Link>
-          </li>
+          {navbarItems.map((item) => (
+            <li key={item.id}>
+              <Link
+                to={item.link}
+                spy={true}
+                smooth={true}
+                offset={-80}
+                duration={500}
+                onMouseEnter={() => handleItemClick(item.id)}
+              >
+                <img
+                  src={iconPath + item.icon}
+                  alt={item.alt}
+                  className="nav-icon"
+                />
+              </Link>
+            </li>
+          ))}
         </ul>
       </div>
     </motion.div>
