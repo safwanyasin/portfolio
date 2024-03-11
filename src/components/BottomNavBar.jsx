@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { Link as ScrollLink } from "react-scroll";
 
 const BottomNavBar = ({ data }) => {
   const [activeItem, setActiveItem] = useState(null);
@@ -13,8 +14,8 @@ const BottomNavBar = ({ data }) => {
 
   // Define an array of navbar items with their corresponding icons, links, and alt text
   const navbarItems = [
-    { id: "home", icon: "home.svg", link: "/", alt: "Home" },
-    { id: "about", icon: "about.svg", link: "/about", alt: "About" },
+    { id: "home", icon: "home.svg", link: "home", alt: "Home" },
+    { id: "about", icon: "about.svg", link: "about", alt: "About" },
     { id: "projects", icon: "work.svg", link: "/projects", alt: "Projects" },
     { id: "contact", icon: "contact.svg", link: "/contact", alt: "Contact" },
     {
@@ -42,7 +43,7 @@ const BottomNavBar = ({ data }) => {
         <ul className="flex justify-between items-center">
           {navbarItems.map((item) => (
             <li key={item.id}>
-              <Link
+              <ScrollLink
                 to={item.link}
                 spy={true}
                 smooth={true}
@@ -55,7 +56,7 @@ const BottomNavBar = ({ data }) => {
                   alt={item.alt}
                   className="nav-icon"
                 />
-              </Link>
+              </ScrollLink>
             </li>
           ))}
         </ul>

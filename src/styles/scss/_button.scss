@@ -17,6 +17,9 @@
 
   h6 {
     margin: 0;
+    @include down-xsm {
+      font-size: 0.75rem;
+    }
   }
 
   &:hover {
@@ -64,11 +67,15 @@
   border-radius: 5px;
 
   @include down-xsm {
-    margin: 5px 10px;
+    margin: 5px 5px;
   }
 
   h6 {
     margin: 0;
+    font-size: 1rem;
+    @include down-xsm {
+      font-size: 0.75rem;
+    }
   }
 
   &:hover {

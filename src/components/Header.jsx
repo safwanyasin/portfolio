@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { TypeAnimation } from "react-type-animation";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { Link as ScrollLink } from "react-scroll";
 
 const Header = ({ data }) => {
   const [activeItem, setActiveItem] = useState(null);
@@ -29,7 +30,7 @@ const Header = ({ data }) => {
 
   return (
     <motion.div
-      className={`header-top-fixed one-page-nav fixed top-0 left-0 right-0 py-4 z-50 bg-transparent transition-all ease duration-300  ${scrolled ? "header-scroll" : ""}`}
+      className={`header-top-fixed one-page-nav fixed top-0 left-0 right-0 py-4 z-50 bg-transparent transition-all ease duration-300`}
       animate={{ y: 0 }}
       initial={{ y: -75 }}
       transition={{ duration: 0.5, ease: "linear", delay: 1 }}
@@ -44,8 +45,8 @@ const Header = ({ data }) => {
         <div className="flex">
           <ul className="main-menu flex">
             <li>
-              <Link
-                to="/about"
+              <ScrollLink
+                to="about"
                 spy={true}
                 smooth={true}
                 offset={-80}
@@ -53,7 +54,7 @@ const Header = ({ data }) => {
                 onMouseEnter={() => handleItemClick("about")}
               >
                 about
-              </Link>
+              </ScrollLink>
             </li>
             <li>
               <Link

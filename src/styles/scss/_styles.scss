@@ -121,6 +121,11 @@ body {
   padding-right: 2rem;
   padding-left: 2rem;
 
+  ::selection {
+    background: var(--px-white);
+    color: var(--px-bg);
+  }
+
   // background: linear-gradient(
   //   90deg,
   //   #07233b 1.67%,
@@ -135,10 +140,23 @@ body {
   text-align: center;
   // height: 100vh;t\
   .coding-icon {
-    position: fixed;
+    position: absolute;
     top: 10%;
     left: 50%;
     transform: scale(0.75);
+  }
+  .status,
+  .description {
+    font-size: 1rem;
+    @include down-xsm {
+      font-size: 0.75rem;
+    }
+  }
+  .description {
+    margin-top: 2.5rem;
+    @include down-xsm {
+      margin-top: 1.25rem;
+    }
   }
   .blob {
     background: red;
@@ -150,6 +168,11 @@ body {
     box-shadow: 0 0 0 0 rgba(255, 0, 0, 1);
     transform: scale(1);
     animation: pulse 2s infinite;
+    @include down-xsm {
+      width: 7px;
+      height: 7px;
+      margin: 5px;
+    }
   }
 
   @keyframes pulse {
@@ -297,5 +320,136 @@ body {
   left: 0;
   @include down-sm {
     top: 15%;
+  }
+}
+
+.about-section {
+  // .avatar {
+  //   width: 20rem;
+
+  //   @include down-xsm {
+  //     width: 15rem;
+  //   }
+  // }
+
+  .intro {
+    display: flex;
+    flex-direction: row;
+    @include down-xsm {
+      display: block;
+      text-align: center;
+    }
+  }
+
+  .experience {
+    margin-top: 2rem;
+    .exp-item {
+      background-color: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: var(--px-white);
+      border-radius: 10px;
+      padding: 0.5rem 1rem;
+      margin-bottom: 1rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      @include down-sm {
+        width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+      }
+    }
+
+    .shield {
+      margin-left: 50%;
+      margin-right: 25%;
+    }
+    h2 {
+      font-weight: bold;
+    }
+  }
+
+  .avatar {
+    width: 33%;
+    @include down-xsm {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+    img {
+      @include down-xsm {
+        height: 200px;
+      }
+    }
+  }
+
+  .about-text {
+    width: 67%;
+    margin-left: 7rem;
+    @include down-lg {
+      margin-left: 5rem;
+    }
+    @include down-sm {
+      margin-left: 3rem;
+    }
+    @include down-xsm {
+      width: 100%;
+      margin: 0;
+    }
+
+    .sub-text-box {
+      margin-bottom: 1.25rem;
+      @include down-xsm {
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+
+  .description {
+    @include down-xsm {
+      font-size: 0.75rem;
+    }
+  }
+}
+
+.sub-text-box {
+  h2 {
+    color: var(--px-text);
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    // text-transform: lowercase;
+    margin: 0;
+    display: inline-block;
+    @include down-lg {
+      font-size: 2rem;
+      line-height: 2rem;
+      padding-top: 0.6rem;
+      // margin: 0 0 20px;
+    }
+    @include down-sm {
+      padding-top: 0px;
+      font-size: 1.5rem;
+      line-height: 1.5rem;
+      // margin: 0 0 10px;
+    }
+    @include down-xsm {
+      font-size: 0.85rem;
+      line-height: 0.85rem;
+    }
+  }
+  h6 {
+    text-align: right;
+    margin: 0 0 0px;
+    font-size: 20px;
+    line-height: 0px;
+    display: block;
+    // text-transform: uppercase;
+    color: var(--px-turquoise);
   }
 }

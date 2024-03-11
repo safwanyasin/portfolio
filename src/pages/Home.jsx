@@ -6,8 +6,9 @@ import BackgroundContainer from "../components/BackgroundContainer";
 import BlobSmall from "../components/BlobSmall";
 import AmbiencePink from "../components/AmbiencePink";
 import AmbienceGreen from "../components/AmbienceGreen";
+import About from "../components/About";
 export default function Home() {
-  const { hero, socialBtns } = HomePageData;
+  const { hero, about, socialBtns } = HomePageData;
   return (
     <>
       <BackgroundContainer>
@@ -28,6 +29,7 @@ export default function Home() {
         </div>
       </BackgroundContainer>
       <Hero data={hero} />
+      <About data={about} />
       {/* <Brands data={brands} />
       <About data={about} />
       <Projects data={projects} />

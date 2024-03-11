@@ -177,8 +177,8 @@ import SecondaryButton from "./SecondaryButton";
 export default function Hero({ data }) {
   const {
     imgUrl,
+    status,
     name,
-    heading,
     typingText,
     typingTextSecondary,
     description,
@@ -202,59 +202,73 @@ export default function Hero({ data }) {
         }}
       >
         <div class="blob"></div>
-        <div>
-          <h6 className="ml-2">Actively looking for work</h6>
+        <div className="status">
+          <h6 className="ml-2">{status}</h6>
         </div>
       </motion.div>
-      <div>
-        {/* Left hs-text-box */}
+      {/* <div> */}
+      {/* Left hs-text-box */}
 
-        <div
-          data-aos="fade-down"
-          data-aos-duration="1000"
-          data-aos-delay="500"
-          className="hs-text-box flex items-center justify-center "
-        >
-          <h2>
-            {/* <h2 className="bracket">&lt;</h2> */}
-            {/* <TypeAnimation
+      <div
+        data-aos="fade-down"
+        data-aos-duration="1000"
+        data-aos-delay="500"
+        className="hs-text-box flex items-center justify-center "
+      >
+        <h2>
+          {/* <h2 className="bracket">&lt;</h2> */}
+          {/* <TypeAnimation
               item
               sequence={typingText}
               speed={1}
               repeat={Infinity}
               cursor={true}
             /> */}
-            <span className="opacity-50">Hi,</span> I'm Safwan
-          </h2>
-        </div>
-
-        {/* Right hs-text-box */}
-        <div
-          className="hs-text-box flex items-center justify-center"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          data-aos-delay="500"
-        >
-          <h2 className="opacity-50">A&nbsp;</h2>
-          <h2>
-            <TypeAnimation
-              cursor={true}
-              sequence={typingTextSecondary}
-              speed={1}
-              repeat={Infinity}
-            />
-          </h2>
-          <h2>Developer</h2>
-        </div>
+          <span className="opacity-50">Hi,</span> I'm Safwan
+        </h2>
       </div>
-      <div className="container">
-        <h1 className="mt-10">
-          Hey, I'm Safwan—a tech enthusiast on the verge of completing a
-          Bachelor's in Computer Science with a finance minor. Currently hunting
-          for roles in software, frontend and mobile app development, I bring a
-          blend of creativity and technical skills. Check out my portfolio for a
-          glimpse of my passion in action!
-        </h1>
+
+      {/* Right hs-text-box */}
+      <div
+        className="hs-text-box flex items-center justify-center"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-delay="500"
+      >
+        <h2 className="opacity-50">A&nbsp;</h2>
+        <h2>
+          <TypeAnimation
+            cursor={true}
+            sequence={typingTextSecondary}
+            speed={1}
+            repeat={Infinity}
+          />
+        </h2>
+        <h2>Developer</h2>
+      </div>
+      {/* </div> */}
+      <motion.div
+        className="container max-w-5xl"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{
+          duration: 1,
+          delay: 2,
+          ease: "easeInOut",
+        }}
+      >
+        <h1 className="description">{description}</h1>
+
+        <div className="container mt-5 ">
+          <PrimaryButton
+            dest={"https://www.google.com"}
+            content={"See my resume"}
+          />
+          <SecondaryButton
+            dest={"https://www.google.com"}
+            content={"Get in touch"}
+          />
+        </div>
         <div className="opacity-10 coding-icon">
           <img
             src={`${process.env.PUBLIC_URL}/coding-icon.png`}
@@ -262,12 +276,8 @@ export default function Hero({ data }) {
             className="mt-4" // Adjust the margin as needed
           />
         </div>
-        <div className="container mt-5 ">
-          <PrimaryButton onPressed={() => {}} content={"See my resume"} />
-          <SecondaryButton onPressed={() => {}} content={"Get in touch"} />
-        </div>
         {/* <Stats /> */}
-      </div>
+      </motion.div>
     </section>
   );
 }

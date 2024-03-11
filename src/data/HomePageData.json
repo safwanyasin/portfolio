@@ -2,11 +2,11 @@
     "logo": [1000, "Safwan."],
     "hero": {
       "imgUrl": "/images/home-banner.png",
-      
+      "status": "Actively looking for work",
       "name": "M Safwan Yasin",
       "typingText": [1000, "software", 1000, "Web", 1000, "App", 1000],
       "typingTextSecondary": [1000, "Web", 1000, "App", 1000, "Software", 1000],
-      "description": "Yet bed any for travelling assistance indulgence unpleasing. Not thoughts all exercise blessing. Indulgence way everything joy alteration boisterous the attachment.",
+      "description": "I am passionate about creating experiences that are engaging and user centric. Currently hunting for roles in software, frontend and mobile app development, I bring a blend of creativity and technical skills. Check out my portfolio for a glimpse of my passion in action!",
       "btnText": "Get in touch",
       "btnUrl": "contactus"
     },
@@ -60,8 +60,8 @@
     "about": {
       "imgSrc": "/images/about-banner.png",
       "miniTitle": [1000, "About Me"],
-      "title": "I AM AVAILABLE FOR <span>UI UX DESIGN</span> PROJECTS",
-      "description": "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.",
+      "title": "I'm a developer based in Istanbul, Turkey",
+      "description": "While purusing a degree in Computer Science from Sabanci University, I am also working as a freelance application, software and web developer. Since, I am in my last semester, I'm activly searching for job opportunities in Europe, Turkey and UAE.",
       "funfacts": [
         {
           "title": "Google Review",

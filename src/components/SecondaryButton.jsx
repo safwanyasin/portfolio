@@ -1,7 +1,8 @@
 import React from "react";
 import { motion, useAnimation } from "framer-motion";
+import { Link } from "react-router-dom";
 
-const SecondaryButton = ({ onPressed, content }) => {
+const SecondaryButton = ({ dest, content }) => {
   const controls = useAnimation();
 
   const handleHover = (isHovered) => {
@@ -20,7 +21,6 @@ const SecondaryButton = ({ onPressed, content }) => {
       className="secondary-button inline-flex"
       onHoverStart={() => handleHover(true)}
       onHoverEnd={() => handleHover(false)}
-      onClick={onPressed}
     >
       {/* <motion.div
         // className="hovered2"
@@ -28,7 +28,9 @@ const SecondaryButton = ({ onPressed, content }) => {
         initial={{ y: 0 }}
         exit={{ y: 0 }}
       > */}
-      <h6>{content}</h6>
+      <Link to={dest} spy={true} smooth={true} offset={-80} duration={500}>
+        <h6>{content}</h6>
+      </Link>
       {/* </motion.div> */}
     </motion.div>
   );
