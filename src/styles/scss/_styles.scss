@@ -132,7 +132,14 @@ body {
 }
 
 .home-section {
-  // height: 100vh;t
+  text-align: center;
+  // height: 100vh;t\
+  .coding-icon {
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: scale(0.75);
+  }
   .blob {
     background: red;
     border-radius: 50%;
@@ -187,26 +194,26 @@ body {
   h2 {
     color: var(--px-text);
     font-weight: 700;
-    font-size: 8rem;
-    line-height: 8rem;
-    text-transform: lowercase;
+    font-size: 5rem;
+    line-height: 5rem;
+    // text-transform: lowercase;
     margin: 0;
     display: inline-block;
     @include down-lg {
-      font-size: 5.5rem;
-      line-height: 3rem;
+      font-size: 4rem;
+      line-height: 4rem;
       padding-top: 1.2rem;
       // margin: 0 0 20px;
     }
     @include down-sm {
       padding-top: 0px;
-      font-size: 4rem;
-      line-height: 3.5rem;
+      font-size: 3rem;
+      line-height: 3rem;
       // margin: 0 0 10px;
     }
     @include down-xsm {
-      font-size: 2.3rem;
-      line-height: 2.3rem;
+      font-size: 1.75rem;
+      line-height: 1.75rem;
     }
   }
   .bracket {

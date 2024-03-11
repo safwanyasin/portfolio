@@ -27,7 +27,7 @@ export default function Home() {
           <BlobSmall />
         </div>
       </BackgroundContainer>
-      <Hero data={hero} socialData={socialBtns} />
+      <Hero data={hero} />
       {/* <Brands data={brands} />
       <About data={about} />
       <Projects data={projects} />

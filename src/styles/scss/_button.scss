@@ -1,40 +1,78 @@
-.html-style-button {
+.primary-button {
   color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
   font-size: 16px;
   padding: 10px 20px;
   border: none;
   cursor: pointer;
-  margin: 40px;
+  // margin: 40px;
+  margin: 20px 10px;
   transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-  border-radius: 30px;
-  border: 1px solid white;
+  border-radius: 5px;
+
+  @include down-xsm {
+    margin: 5px 10px;
+  }
 
   h6 {
     margin: 0;
   }
 
-  .hovered1,
-  .hovered2 {
-    display: inline-block;
-    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    background-color: rgba(0, 0, 0, 1);
+    transition: background-color 1s ease;
   }
 
-  &:hover .hovered1 {
-    transform: translateX(-5px);
-    animation: hoverAnimation 1.5s ease-in-out inherit;
+  // .hovered1,
+  // .hovered2 {
+  //   display: inline-block;
+  //   transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  // }
+
+  // &:hover .hovered1 {
+  //   transform: translateX(-5px);
+  //   animation: hoverAnimation 1.5s ease-in-out inherit;
+  // }
+
+  // &:hover .hovered2 {
+  //   transform: translateX(5px);
+  //   animation: hoverAnimation 1.5s ease-in-out inherit;
+  // }
+
+  // @keyframes hoverAnimation {
+  //   0%,
+  //   100% {
+  //     transform: translateX(0);
+  //   }
+  //   50% {
+  //     transform: translateX(-10px);
+  //   }
+  // }
+}
+
+.secondary-button {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin: 20px 10px;
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 5px;
+
+  @include down-xsm {
+    margin: 5px 10px;
   }
 
-  &:hover .hovered2 {
-    transform: translateX(5px);
-    animation: hoverAnimation 1.5s ease-in-out inherit;
+  h6 {
+    margin: 0;
   }
 
-  @keyframes hoverAnimation {
-    0%, 100% {
-      transform: translateX(0);
-    }
-    50% {
-      transform: translateX(-10px);
-    }
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: background-color 1s ease;
   }
 }

@@ -1,9 +1,10 @@
-import React, { useEffect } from 'react';
-import { Outlet } from 'react-router-dom';
-import Header from './Header';
-import Footer from './Footer';
-import CustomCursor from './CustomCursor';
-import HomePageData from '../data/HomePageData.json';
+import React, { useEffect } from "react";
+import { Outlet } from "react-router-dom";
+import Header from "./Header";
+import Footer from "./Footer";
+import CustomCursor from "./CustomCursor";
+import HomePageData from "../data/HomePageData.json";
+import BottomNavBar from "./BottomNavBar";
 
 export default function Layout() {
   const {
@@ -23,10 +24,11 @@ export default function Layout() {
   }, []);
   return (
     <>
-      <Header data={logo}/>
+      <Header data={logo} />
       <main>
         <Outlet />
       </main>
+      <BottomNavBar />
       {/* <CustomCursor /> */}
       {/* <Footer /> */}
     </>
