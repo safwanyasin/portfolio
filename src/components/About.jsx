@@ -4,6 +4,7 @@ import { TypeAnimation } from "react-type-animation";
 import { Link as ScrollLink } from "react-scroll";
 import { getCurrentlyPlayingTracks } from "./GetCurrentlyPlayingItem";
 import { SpotifyNowPlaying } from "./SpotifyNowPlaying";
+import WorkCard from "./WorkCard";
 export default function About({ data }) {
   const { imgSrc, title, miniTitle, description } = data;
   const iconPath = process.env.PUBLIC_URL;
@@ -86,6 +87,7 @@ export default function About({ data }) {
               <h2>2020-2024</h2>
             </div>
           </div>
+          <WorkCard name="TaleTuner" description="Book App" />
         </div>
       </div>
       {/* <SpotifyNowPlaying */}
