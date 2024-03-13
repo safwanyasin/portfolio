@@ -7,6 +7,7 @@ import BlobSmall from "../components/BlobSmall";
 import AmbiencePink from "../components/AmbiencePink";
 import AmbienceGreen from "../components/AmbienceGreen";
 import About from "../components/About";
+import SelecetedWork from "../components/SelectedWork";
 export default function Home() {
   const { hero, about, socialBtns } = HomePageData;
   return (
@@ -30,6 +31,7 @@ export default function Home() {
       </BackgroundContainer>
       <Hero data={hero} />
       <About data={about} />
+      <SelecetedWork />
       {/* <Brands data={brands} />
       <About data={about} />
       <Projects data={projects} />

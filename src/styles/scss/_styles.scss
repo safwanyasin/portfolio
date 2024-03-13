@@ -460,14 +460,21 @@ body {
 // Card.scss
 .work-card {
   width: 100%;
+  min-height: 20rem;
   display: flex;
   background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(10px);
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: 30px;
+  margin-left: 0;
   margin-bottom: 20px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   transition: transform 0.5s ease-in-out;
+  padding: 20px 0px 20px 20px;
+
+  @include down-xsm {
+    padding: 7px 0px 7px 7px;
+  }
 
   &:hover {
     transform: translateY(-5px);
@@ -481,6 +488,12 @@ body {
     justify-content: space-between;
     color: #fff;
 
+    .logo {
+      width: 100px;
+      height: 100px;
+      margin-bottom: 1rem;
+    }
+
     .name {
       font-size: 1.5rem;
       margin-bottom: 10px;
@@ -492,18 +505,47 @@ body {
     }
   }
 
-  .image {
+  .model {
     width: 33.333%;
-    background-size: cover;
-    background-position: center;
   }
 
-  @include down-xsm {
+  @include down-md {
+    .content {
+      width: 50%;
+    }
+    .model {
+      width: 50%;
+    }
+  }
+
+  @include down-lg {
+    .content {
+      width: 60%;
+    }
+    .model {
+      width: 40%;
+    }
+  }
+
+  @include down-sm {
     .content {
       width: 100%;
     }
-    .image {
+    .model {
       display: none;
     }
+  }
+}
+
+.selected-work-section {
+  margin-top: 30vh;
+  margin: 0;
+  padding: 0;
+
+  .work-cards-container {
+    padding: 0;
+    margin: 0;
+    margin-top: 40px;
+    width: 100%;
   }
 }

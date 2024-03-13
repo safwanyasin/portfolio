@@ -10,11 +10,11 @@ export default function About({ data }) {
   const iconPath = process.env.PUBLIC_URL;
   return (
     <section
-      className="about-section relative flex justify-center items-center"
+      className="about-section h-screen relative flex justify-center items-center"
       id="about"
       data-scroll-index={0}
     >
-      <div className="h-screen">
+      <div className="">
         <div className="intro">
           <div className="avatar">
             <img src={iconPath + "/avatar.svg"} />
@@ -87,7 +87,6 @@ export default function About({ data }) {
               <h2>2020-2024</h2>
             </div>
           </div>
-          <WorkCard name="TaleTuner" description="Book App" />
         </div>
       </div>
       {/* <SpotifyNowPlaying */}
