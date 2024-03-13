@@ -10,53 +10,6 @@
       "btnText": "Get in touch",
       "btnUrl": "contactus"
     },
-    "socialBtns": [
-      {
-        "icon": "fa-brands:facebook-f",
-        "iconBgClass": "facebook",
-        "href": "/"
-      },
-      { "icon": "fa-brands:dribbble", "iconBgClass": "dribbble", "href": "/" },
-      {
-        "icon": "fa-brands:linkedin-in",
-        "iconBgClass": "linkedin",
-        "href": "/"
-      }
-    ],
-    "brands": [
-      {
-        "src": "/images/brand-1.svg",
-        "alt": "Logolpsum"
-      },
-      {
-        "src": "/images/brand-2.svg",
-        "alt": "Logolpsum"
-      },
-      {
-        "src": "/images/brand-1.svg",
-        "alt": "Logolpsum"
-      },
-      {
-        "src": "/images/brand-2.svg",
-        "alt": "Logolpsum"
-      },
-      {
-        "src": "/images/brand-1.svg",
-        "alt": "Logolpsum"
-      },
-      {
-        "src": "/images/brand-2.svg",
-        "alt": "Logolpsum"
-      },
-      {
-        "src": "/images/brand-1.svg",
-        "alt": "Logolpsum"
-      },
-      {
-        "src": "/images/brand-2.svg",
-        "alt": "Logolpsum"
-      }
-    ],
     "about": {
       "imgSrc": "/images/about-banner.png",
       "miniTitle": [1000, "About Me"],
@@ -128,6 +81,78 @@
       }
 
     },
+    "knowledge": {
+      "title": "Tech Stack",
+      "description": "An overview of some of the softwares, frameworks, and langauges I frequently use",
+      "dev": [
+        {
+          "logo": "/figma.svg",
+          "name": "Figma",
+          "type": "Design"
+        },
+        {
+          "logo": "/flutter.svg",
+          "name": "Flutter",
+          "type": "UI SDK"
+        },
+        {
+          "logo": "/react.svg",
+          "name": "React",
+          "type": "Web Framework"
+        },
+        {
+          "logo": "/vue.svg",
+          "name": "Vue.js",
+          "type": "Web Framework"
+        },
+        {
+          "logo": "/tailwind.svg",
+          "name": "Tailwind",
+          "type": "CSS Framework"
+        },
+        {
+          "logo": "/sass.svg",
+          "name": "SASS",
+          "type": "CSS Framework"
+        },
+        {
+          "logo": "/rive.svg",
+          "name": "Rive",
+          "type": "Animation"
+        },
+        {
+          "logo": "/spline.svg",
+          "name": "Spline",
+          "type": "Animation"
+        },
+        {
+          "logo": "/firebase.svg",
+          "name": "Firebase",
+          "type": "Database"
+        },
+        {
+          "logo": "/mongodb.svg",
+          "name": "MongoDB",
+          "type": "Database"
+        },
+        {
+          "logo": "/python.svg",
+          "name": "Python",
+          "type": "Language"
+        },
+        {
+          "logo": "/cp.svg",
+          "name": "C++",
+          "type": "Language"
+        },
+        {
+          "logo": "/javascript.svg",
+          "name": "JavaScript",
+          "type": "Language"
+        }
+
+      ]
+    },
     "service": {
       "sectionHeading": {
         "miniTitle": "SERVICES",
@@ -161,64 +186,6 @@
           "subTitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.",
           "icon": "bi:palette",
           "ratings": 5
-        }
-      ]
-    },
-    "experience": {
-      "sectionHeading": {
-        "miniTitle": "Experience",
-        "title": "My Work <span>Experience</span>"
-      },
-      "allExperience": [
-        {
-          "designation": "Front-end Developer",
-          "company": "WELAB | REMOTE",
-          "duration": "JAN 2019 - PRESENT",
-          "jobType": "Full time",
-          "companyTitle": "About Company",
-          "companyDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ."
-        },
-        {
-          "designation": "Front-end Developer",
-          "company": "WELAB | REMOTE",
-          "duration": "JAN 2019 - PRESENT",
-          "jobType": "Full time",
-          "companyTitle": "About Company",
-          "companyDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ."
-        },
-        {
-          "designation": "Front-end Developer",
-          "company": "WELAB | REMOTE",
-          "duration": "JAN 2019 - PRESENT",
-          "jobType": "Full time",
-          "companyTitle": "About Company",
-          "companyDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ."
-        }
-      ]
-    },
-    "testimonial": {
-      "sectionHeading": {
-        "miniTitle": "Testimonial",
-        "title": "Over <span>8,000+</span> <br /> PEOPLE TRUST ME"
-      },
-      "allTestimonial": [
-        {
-          "reviewText": "Donec tellus sem, tempor ac purus a, porttitor lobortis purus. Etiam quis nisl eget ex pulvinar consectetur. Suspendisse potenti. Cras non elementum risus. Fusce massa tellus, consequat a rutrum et, aliquam a lacus. Quisque viverra egestas tincidunt. Nunc nec nisi sed enim consectetur ullamcorper. Vestibulum at neque tortor. Pellentesque urna enim, ultricies at tortor eu, elementum egestas leo. In hac habitasse platea dictumst.",
-          "avatarImg": "/images/avatar-1.jpg",
-          "avatarName": "Pamela Anders",
-          "avatarCompany": "Company Name"
-        },
-        {
-          "reviewText": "Donec tellus sem, tempor ac purus a, porttitor lobortis purus. Etiam quis nisl eget ex pulvinar consectetur. Suspendisse potenti. Cras non elementum risus. Fusce massa tellus, consequat a rutrum et, aliquam a lacus. Quisque viverra egestas tincidunt. Nunc nec nisi sed enim consectetur ullamcorper. Vestibulum at neque tortor. Pellentesque urna enim, ultricies at tortor eu, elementum egestas leo. In hac habitasse platea dictumst.",
-          "avatarImg": "/images/avatar-2.jpg",
-          "avatarName": "Pamela Anders",
-          "avatarCompany": "Company Name"
-        },
-        {
-          "reviewText": "Donec tellus sem, tempor ac purus a, porttitor lobortis purus. Etiam quis nisl eget ex pulvinar consectetur. Suspendisse potenti. Cras non elementum risus. Fusce massa tellus, consequat a rutrum et, aliquam a lacus. Quisque viverra egestas tincidunt. Nunc nec nisi sed enim consectetur ullamcorper. Vestibulum at neque tortor. Pellentesque urna enim, ultricies at tortor eu, elementum egestas leo. In hac habitasse platea dictumst.",
-          "avatarImg": "/images/avatar-3.jpg",
-          "avatarName": "Pamela Anders",
-          "avatarCompany": "Company Name"
         }
       ]
     },

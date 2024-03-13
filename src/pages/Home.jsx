@@ -8,8 +8,10 @@ import AmbiencePink from "../components/AmbiencePink";
 import AmbienceGreen from "../components/AmbienceGreen";
 import About from "../components/About";
 import SelecetedWork from "../components/SelectedWork";
+import TechStackCard from "../components/TechStackCard";
+import TechStack from "../components/TechStack";
 export default function Home() {
-  const { hero, about, work, socialBtns } = HomePageData;
+  const { hero, about, work, knowledge, socialBtns } = HomePageData;
   return (
     <>
       <BackgroundContainer>
@@ -32,6 +34,7 @@ export default function Home() {
       <Hero data={hero} />
       <About data={about} />
       <SelecetedWork data={work} />
+      <TechStack data={knowledge} />
       {/* <Brands data={brands} />
       <About data={about} />
       <Projects data={projects} />

@@ -37,9 +37,9 @@ const Header = ({ data }) => {
     >
       <div className="flex justify-between items-center navbar">
         <div className="logo">
-          <Link to="/" className="navbar-brand">
+          <ScrollLink to="home" className="navbar-brand">
             <h6>Safwan.</h6>
-          </Link>
+          </ScrollLink>
         </div>
 
         <div className="flex">

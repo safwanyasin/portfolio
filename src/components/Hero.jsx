@@ -201,7 +201,7 @@ export default function Hero({ data }) {
           ease: "easeInOut",
         }}
       >
-        <div class="blob"></div>
+        <div className="blob"></div>
         <div className="status">
           <h6 className="ml-2">{status}</h6>
         </div>
