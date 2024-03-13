@@ -87,3 +87,41 @@
 .plain-button {
   font-weight: 600;
 }
+
+.contact-button {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin: 20px 10px;
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 5px;
+
+  @include down-xsm {
+    margin: 5px 5px;
+  }
+
+  h6 {
+    margin: 0;
+    font-size: 1rem;
+    @include down-xsm {
+      font-size: 0.75rem;
+    }
+  }
+
+  img {
+    margin-right: 5px;
+    height: 1.25rem;
+    @include down-xsm {
+      height: 1rem;
+    }
+  }
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 1);
+    transition: background-color 1s ease;
+  }
+}

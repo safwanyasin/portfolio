@@ -57,20 +57,20 @@ const Header = ({ data }) => {
               </ScrollLink>
             </li>
             <li>
-              <Link
-                to="/projects"
+              <ScrollLink
+                to="selected-work"
                 spy={true}
                 smooth={true}
                 offset={-80}
                 duration={500}
                 onMouseEnter={() => handleItemClick("projects")}
               >
-                projects
-              </Link>
+                work
+              </ScrollLink>
             </li>
             <li>
               <Link
-                to="/contact"
+                to="contact"
                 spy={true}
                 smooth={true}
                 offset={-80}

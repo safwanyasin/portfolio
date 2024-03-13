@@ -13,9 +13,11 @@ const PlainButton = ({ dest, content }) => {
         exit={{ y: 0 }}
       > */}
       <div className="flex align-middle justify-center items-center">
-        <Link to={dest} spy={true} smooth={true} offset={-80} duration={500}>
-          <h6 className="text-white opacity-100">{content}</h6>
-        </Link>
+        <div>
+          <a href={dest} target="_blank" className="text-white opacity-100">
+            {content}
+          </a>
+        </div>
         <img className="ml-1" src={iconPath + "/arrow-right.svg"} />
       </div>
 

@@ -79,97 +79,54 @@
       "btnText": "Get in touch",
       "btnUrl": "contactus"
     },
-    "projects": {
-      "sectionHeading": {
-        "miniTitle": "My Work",
-        "title": "RECENT PROJECT"
-      },
+    "work": {
+
+      "title": "Selected Work",
+
       "allProjects": [
         {
-          "thumbUrl": "/images/popup-project-1.jpg",
-          "title": "Website Design",
-          "subTitle": "Web Design, App Design",
-          "details": {
-            "title": "Website Design for Marketing Agency Startup",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br>xcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-            "type": "Website",
-            "langages": "PHP, HTML, CSS, JS",
-            "platform": "WordPress",
-            "country": "USA",
-            "url": "www.example.com"
-          }
+          "id": "taletuner",
+          "logoUrl": "taletuner_logo.png",
+          "buttonText": "View Code",
+          "buttonLink": "https://github.com/safwanyasin/bookAI",
+          "name": "TaleTuner - A Bookkeeping and AI Story Generation App built using DDD",
+          "description":
+            "TaleTuner - A Bookkeeping and AI Story Generation App built using Flutter DDD",
+          "imageUrl": "https://prod.spline.design/xF6USS3srKGVjEO5/scene.splinecode"
         },
         {
-          "thumbUrl": "/images/popup-project-2.jpg",
-          "title": "Website Design",
-          "subTitle": "Web Design, App Design",
-          "details": {
-            "title": "Website Design for Marketing Agency Startup",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br>xcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-            "type": "Website",
-            "langages": "PHP, HTML, CSS, JS",
-            "platform": "WordPress",
-            "country": "USA",
-            "url": "www.example.com"
-          }
+          "id": "nottacafe",
+          "logoUrl": "nottacafe_logo.png",
+          "buttonText": "View Code",
+          "buttonLink": "https://github.com/safwanyasin/NottACafe",
+          "name": "NottACafe - A Food Ordering App",
+          "description": "Nottacafe - A Food Ordering App build using Flutter",
+          "imageUrl": "https://prod.spline.design/3BqexEOwVqzx486w/scene.splinecode"
         },
         {
-          "thumbUrl": "/images/popup-project-3.jpg",
-          "title": "Dashboard Design",
-          "subTitle": "Web Design, App Design",
-          "details": {
-            "title": "Website Design for Marketing Agency Startup",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br>xcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-            "type": "Website",
-            "langages": "PHP, HTML, CSS, JS",
-            "platform": "WordPress",
-            "country": "USA",
-            "url": "www.example.com"
-          }
+          "id": "lightbulb",
+          "logoUrl": "lightbulb_logo.png",
+          "buttonText": "View Code",
+          "buttonLink": "https://github.com/safwanyasin/lightbulb",
+          "name": "Lightbulb - An Educational Social Media App",
+          "description": "Lightbulb - An Eduactional Social App build using Flutter",
+          "imageUrl": "https://prod.spline.design/na9Rwn3vPI3LzBmw/scene.splinecode"
         },
         {
-          "thumbUrl": "/images/popup-project-4.jpg",
-          "title": "Mobile App Design",
-          "subTitle": "Web Design, App Design",
-          "details": {
-            "title": "Website Design for Marketing Agency Startup",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br>xcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-            "type": "Website",
-            "langages": "PHP, HTML, CSS, JS",
-            "platform": "WordPress",
-            "country": "USA",
-            "url": "www.example.com"
-          }
-        },
-        {
-          "thumbUrl": "/images/popup-project-5.jpg",
-          "title": "Website Design",
-          "subTitle": "Web Design, App Design",
-          "details": {
-            "title": "Website Design for Marketing Agency Startup",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br>xcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-            "type": "Website",
-            "langages": "PHP, HTML, CSS, JS",
-            "platform": "WordPress",
-            "country": "USA",
-            "url": "www.example.com"
-          }
-        },
-        {
-          "thumbUrl": "/images/popup-project-6.jpg",
-          "title": "Website Design",
-          "subTitle": "Web Design, App Design",
-          "details": {
-            "title": "Website Design for Marketing Agency Startup",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br>xcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-            "type": "Website",
-            "langages": "PHP, HTML, CSS, JS",
-            "platform": "WordPress",
-            "country": "USA",
-            "url": "www.example.com"
-          }
+          "id": "gamehub",
+          "logoUrl": "gamehub_logo.png",
+          "buttonText": "View Code",
+          "buttonLink": "https://github.com/safwanyasin/gamehub",
+          "name": "GameHub - An e-commerce web application for purchasing games",
+          "description": "GameHub - An e-commerce web application for purchasing games built using Vue.js"
         }
-      ]
+      ],
+      "futureProject": {
+        "logo": "/stars.svg",
+        "name": "Your project goes here",
+        "description": "Let's turn your idea into reality"
+      }
+
     },
     "service": {
       "sectionHeading": {

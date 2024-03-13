@@ -373,6 +373,13 @@ body {
     h6 {
       color: rgba(255, 255, 255, 0.7);
     }
+    h2,
+    h6 {
+      font-size: 1rem;
+      @include down-xsm {
+        font-size: 0.75rem;
+      }
+    }
   }
 
   .avatar {
@@ -404,13 +411,6 @@ body {
       width: 100%;
       margin: 0;
     }
-
-    .sub-text-box {
-      margin-bottom: 1.25rem;
-      @include down-xsm {
-        margin-bottom: 0.5rem;
-      }
-    }
   }
 
   .description {
@@ -428,6 +428,8 @@ body {
     line-height: 2.5rem;
     // text-transform: lowercase;
     margin: 0;
+    margin-bottom: 1.25rem;
+
     display: inline-block;
     @include down-lg {
       font-size: 2rem;
@@ -442,8 +444,9 @@ body {
       // margin: 0 0 10px;
     }
     @include down-xsm {
-      font-size: 0.85rem;
-      line-height: 0.85rem;
+      font-size: 1.25rem;
+      line-height: 1.25rem;
+      margin-bottom: 0.5rem;
     }
   }
   h6 {
@@ -492,16 +495,29 @@ body {
       width: 100px;
       height: 100px;
       margin-bottom: 1rem;
+      @include down-sm {
+        width: 75px;
+        height: 75px;
+      }
     }
 
     .name {
       font-size: 1.5rem;
       margin-bottom: 10px;
+      font-weight: bold;
+      @include down-sm {
+        font-size: 1rem;
+      }
+      @include down-xsm {
+        font-size: 0.85rem;
+      }
     }
 
     .description {
       font-size: 1rem;
-      margin-bottom: 20px;
+      @include down-xsm {
+        font-size: 0.75rem;
+      }
     }
   }
 
@@ -537,15 +553,80 @@ body {
   }
 }
 
+.future-project-card {
+  width: 100%;
+  min-height: 30rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(25, 25, 25, 0.3);
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+  border-radius: 30px;
+  margin-left: 0;
+  margin-bottom: 20px;
+  border: 1px dashed rgba(255, 255, 255, 0.1);
+  transition: transform 0.5s ease-in-out;
+  padding: 20px 0px 20px 20px;
+
+  @include down-xsm {
+    padding: 7px 0px 7px 7px;
+  }
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  .content {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+
+    .logo {
+      width: 100px;
+      height: 100px;
+      margin-bottom: 2.5rem;
+      @include down-sm {
+        width: 75px;
+        height: 75px;
+      }
+    }
+
+    .name {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      font-weight: bold;
+      @include down-sm {
+        font-size: 1rem;
+      }
+      @include down-xsm {
+        font-size: 0.85rem;
+      }
+    }
+
+    .description {
+      font-size: 1rem;
+      @include down-xsm {
+        font-size: 0.75rem;
+      }
+    }
+  }
+}
+
 .selected-work-section {
-  margin-top: 30vh;
   margin: 0;
+  margin-top: 30vh;
+
   padding: 0;
 
   .work-cards-container {
     padding: 0;
     margin: 0;
-    margin-top: 40px;
+    margin-bottom: 2rem;
     width: 100%;
   }
 }

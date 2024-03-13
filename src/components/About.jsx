@@ -10,7 +10,7 @@ export default function About({ data }) {
   const iconPath = process.env.PUBLIC_URL;
   return (
     <section
-      className="about-section h-screen relative flex justify-center items-center"
+      className="about-section relative flex justify-center items-center"
       id="about"
       data-scroll-index={0}
     >

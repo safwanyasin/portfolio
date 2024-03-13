@@ -1,38 +1,11 @@
 import React from "react";
 import { Link as ScrollLink } from "react-scroll";
 import WorkCard from "./WorkCard"; // Import the WorkCard component
+import FutureProjectCard from "./FutureProjectCard";
 
-export default function SelecetedWork() {
-  const workItems = [
-    {
-      id: "taletuner",
-      logoUrl: "taletuner_logo.png",
-      buttonText: "View Code",
-      buttonLink: "",
-      name: "TaleTuner - A Bookkeeping and AI Story Generation App built using DDD",
-      description:
-        "TaleTuner - A Bookkeeping and AI Story Generation App built using Flutter DDD",
-      imageUrl: "https://prod.spline.design/xF6USS3srKGVjEO5/scene.splinecode",
-    },
-    {
-      id: "nottacafe",
-      logoUrl: "nottacafe_logo.png",
-      buttonText: "View Code",
-      buttonLink: "",
-      name: "NottACafe - A Food Ordering App",
-      description: "Nottacafe - A Food Ordering App build using Flutter",
-      imageUrl: "https://prod.spline.design/3BqexEOwVqzx486w/scene.splinecode",
-    },
-    {
-      id: "lightbulb",
-      logoUrl: "lightbulb_logo.png",
-      buttonText: "View Code",
-      buttonLink: "",
-      name: "Lightbulb - An Educational Social Media App",
-      description: "Lightbulb - An Eduactional Social App build using Flutter",
-      imageUrl: "https://prod.spline.design/na9Rwn3vPI3LzBmw/scene.splinecode",
-    },
-  ];
+export default function SelecetedWork({ data }) {
+  const { title, allProjects, futureProject } = data;
+  const workItems = allProjects;
 
   return (
     <section
@@ -44,9 +17,9 @@ export default function SelecetedWork() {
         data-aos="fade-down"
         data-aos-duration="1000"
         data-aos-delay="500"
-        className="hs-text-box flex items-center justify-center "
+        className="sub-text-box block mb-3 w-full"
       >
-        <h2>Selected Work</h2>
+        <h2>{title}</h2>
       </div>
 
       {/* Map over the workItems and render WorkCard component for each item */}
@@ -54,6 +27,7 @@ export default function SelecetedWork() {
         {workItems.map((workItem) => (
           <WorkCard key={workItem.id} {...workItem} />
         ))}
+        <FutureProjectCard {...futureProject} />
       </div>
     </section>
   );

@@ -2,7 +2,14 @@ import React from "react";
 import PlainButton from "./PlainButton";
 import Spline from "@splinetool/react-spline";
 
-const WorkCard = ({ name, description, logoUrl, imageUrl, buttonText, projectLink }) => {
+const WorkCard = ({
+  name,
+  description,
+  logoUrl,
+  imageUrl,
+  buttonText,
+  buttonLink,
+}) => {
   return (
     <div className="work-card">
       <div className="content">
@@ -11,7 +18,7 @@ const WorkCard = ({ name, description, logoUrl, imageUrl, buttonText, projectLin
           <h2 className="name">{name}</h2>
           <p className="description">{description}</p>
         </div>
-        <PlainButton dest={projectLink} content={buttonText} />
+        <PlainButton dest={buttonLink} content={buttonText} />
       </div>
       <div className="model">
         <Spline scene={imageUrl} />
