@@ -7,7 +7,11 @@ const FutureProjectCard = ({ logo, name, description }) => {
   const iconPath = process.env.PUBLIC_URL;
 
   return (
-    <div className="future-project-card">
+    <div
+      className="future-project-card"
+      data-aos="fade-down"
+      data-aos-duration="1000"
+    >
       <div className="content">
         <img className="logo" src={iconPath + logo} />
         <h2 className="name">{name}</h2>

@@ -16,8 +16,13 @@ const BottomNavBar = ({ data }) => {
   const navbarItems = [
     { id: "home", icon: "home.svg", link: "home", alt: "Home" },
     { id: "about", icon: "about.svg", link: "about", alt: "About" },
-    { id: "projects", icon: "work.svg", link: "/projects", alt: "Projects" },
-    { id: "contact", icon: "contact.svg", link: "/contact", alt: "Contact" },
+    {
+      id: "selected-work",
+      icon: "work.svg",
+      link: "selected-work",
+      alt: "Projects",
+    },
+    { id: "contact", icon: "contact.svg", link: "contact", alt: "Contact" },
     {
       id: "linkedin",
       icon: "linkedin.svg",

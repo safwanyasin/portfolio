@@ -17,7 +17,6 @@ const Header = ({ data }) => {
       const scrollY = window.scrollY;
       if (scrollY > 50) {
         setScrolled(true);
-        console.log(scrolled);
       } else {
         setScrolled(false);
       }
@@ -37,7 +36,13 @@ const Header = ({ data }) => {
     >
       <div className="flex justify-between items-center navbar">
         <div className="logo">
-          <ScrollLink to="home" className="navbar-brand">
+          <ScrollLink
+            to="home"
+            className="navbar-brand"
+            smooth={true}
+            offset={-80}
+            duration={500}
+          >
             <h6>Safwan.</h6>
           </ScrollLink>
         </div>
@@ -69,7 +74,7 @@ const Header = ({ data }) => {
               </ScrollLink>
             </li>
             <li>
-              <Link
+              <ScrollLink
                 to="contact"
                 spy={true}
                 smooth={true}
@@ -78,7 +83,7 @@ const Header = ({ data }) => {
                 onMouseEnter={() => handleItemClick("contact")}
               >
                 contact
-              </Link>
+              </ScrollLink>
             </li>
           </ul>
           <div className="vertical-line"></div>

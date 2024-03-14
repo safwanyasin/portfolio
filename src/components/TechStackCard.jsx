@@ -4,7 +4,11 @@ const TechStackCard = ({ logo, name, type }) => {
   const iconPath = process.env.PUBLIC_URL + "/tech";
 
   return (
-    <div className="tech-stack-card">
+    <div
+      className="tech-stack-card"
+      data-aos="fade-down"
+      data-aos-duration="1000"
+    >
       <div className="content">
         <div className="logo flex items-center align-middle justify-center">
           <img src={iconPath + logo} alt={name} />

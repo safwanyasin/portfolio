@@ -264,10 +264,7 @@ export default function Hero({ data }) {
             dest={"https://www.google.com"}
             content={"See my resume"}
           />
-          <SecondaryButton
-            dest={"https://www.google.com"}
-            content={"Get in touch"}
-          />
+          <SecondaryButton dest={"contact"} content={"Get in touch"} />
         </div>
         <div className="opacity-10 coding-icon">
           <img

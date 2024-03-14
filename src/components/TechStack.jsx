@@ -3,7 +3,6 @@ import TechStackCard from "./TechStackCard";
 
 const TechStack = ({ data }) => {
   const { title, description, dev } = data;
-  console.log(dev);
   return (
     <section
       className="tech-stack-section flex-col justify-center items-center flex"
@@ -18,7 +17,12 @@ const TechStack = ({ data }) => {
       >
         <h2>{title}</h2>
       </div>
-      <div className="description block mb-10 w-full">
+      <div
+        className="description block mb-10 w-full"
+        data-aos="fade-down"
+        data-aos-duration="1000"
+        data-aos-delay="500"
+      >
         <h6>{description}</h6>
       </div>
       <div className="tech-stack-grid">

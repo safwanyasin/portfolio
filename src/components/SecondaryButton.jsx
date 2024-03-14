@@ -1,6 +1,7 @@
 import React from "react";
 import { motion, useAnimation } from "framer-motion";
 import { Link } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 
 const SecondaryButton = ({ dest, content }) => {
   const controls = useAnimation();
@@ -28,9 +29,15 @@ const SecondaryButton = ({ dest, content }) => {
         initial={{ y: 0 }}
         exit={{ y: 0 }}
       > */}
-      <Link to={dest} spy={true} smooth={true} offset={-80} duration={500}>
+      <ScrollLink
+        to={dest}
+        spy={true}
+        smooth={true}
+        offset={-80}
+        duration={500}
+      >
         <h6>{content}</h6>
-      </Link>
+      </ScrollLink>
       {/* </motion.div> */}
     </motion.div>
   );

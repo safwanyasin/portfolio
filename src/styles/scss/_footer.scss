@@ -1,0 +1,140 @@
+footer {
+  width: 100vw;
+  position: absolute;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  @include down-xsm {
+    padding: 30px 30px 80px 30px;
+    width: 100%;
+  }
+}
+.footer {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding: 3rem;
+
+  @include down-xsm {
+    display: block;
+    padding: 0;
+  }
+
+  .heading {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    @include down-xsm {
+      font-size: 0.75rem;
+      margin-bottom: 5px;
+    }
+  }
+
+  .logo-container {
+    width: auto;
+  }
+
+  .logo {
+    h6 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+  }
+
+  .thanks-text {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.7);
+    @include down-xsm {
+      font-size: 0.75rem;
+    }
+  }
+
+  .all-links {
+    display: flex;
+    justify-content: space-between;
+    @include down-xsm {
+      display: block;
+    }
+  }
+
+  .links {
+    margin-right: 3rem;
+    @include down-xsm {
+      margin-right: 0;
+    }
+  }
+  .external-links {
+    margin-left: 3rem;
+    @include down-xsm {
+      margin-left: 0;
+    }
+  }
+
+  .links,
+  .external-links {
+    ul {
+      list-style: none;
+      padding: 0;
+      @include down-xsm {
+        margin-bottom: 10px;
+      }
+
+      li {
+        margin-bottom: 7px;
+        @include down-xsm {
+          margin-bottom: 0px;
+        }
+
+        a {
+          color: white;
+          text-decoration: none;
+          @include down-xsm {
+            font-size: 0.75rem;
+          }
+        }
+      }
+    }
+  }
+
+  li a {
+    position: relative;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    text-transform: capitalize;
+
+    &:hover {
+      color: var(--px-white);
+    }
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      width: 0%;
+      height: 1px;
+      bottom: 0;
+    }
+
+    &:after {
+      right: 2.5px;
+      background: var(--px-turquoise);
+      transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+    }
+    &:hover:before {
+      background: var(--px-turquoise);
+      width: 100%;
+      transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+    }
+    &:hover:after {
+      background: transparent;
+      width: 100%;
+      transition: 0s;
+    }
+  }
+}
+.copyright {
+  text-align: center;
+}

@@ -30,7 +30,7 @@ const PrimaryButton = ({ dest, content }) => {
         initial={{ y: 0 }}
         exit={{ y: 0 }}
       > */}
-      <Link to={dest} spy={true} smooth={true} offset={-80} duration={500}>
+      <Link to={dest} offset={-80} duration={500}>
         <h6>{content}</h6>
       </Link>
 

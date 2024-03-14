@@ -21,10 +21,19 @@ export default function About({ data }) {
           </div>
           <div className="about-text flex flex-col justify-center align-middle">
             {/* Left hs-text-box */}
-            <div className="sub-text-box">
+            <div
+              className="sub-text-box"
+              data-aos="fade-down"
+              data-aos-duration="1000"
+            >
               <h2>{title}</h2>
             </div>
-            <div className="description">
+            <div
+              className="description"
+              data-aos="fade"
+              data-aos-duration="1000"
+              data-aos-delay="500"
+            >
               <h6>{description}</h6>
               <br />
               <h6>
@@ -42,7 +51,12 @@ export default function About({ data }) {
           </div>
         </div>
         <div className="experience">
-          <div className="exp-item ml-auto w-1/4">
+          <div
+            className="exp-item ml-auto w-1/4"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-delay="500"
+          >
             <div className="details">
               <h2>Beakwise</h2>
               <h6>Software Engineer</h6>
@@ -51,7 +65,12 @@ export default function About({ data }) {
               <h2>23</h2>
             </div>
           </div>
-          <div className="exp-item w-1/2 shield">
+          <div
+            className="exp-item w-1/2 shield"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-delay="500"
+          >
             <div className="details">
               <h2>Shield Technologies</h2>
               <h6>Full-Stack Developer</h6>
@@ -60,7 +79,12 @@ export default function About({ data }) {
               <h2>22-23</h2>
             </div>
           </div>
-          <div className="exp-item w-1/2 ml-auto">
+          <div
+            className="exp-item w-1/2 ml-auto"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-delay="500"
+          >
             <div className="details">
               <h2>Freelance</h2>
               <h6>Web & Mobile App Developer</h6>
@@ -69,7 +93,12 @@ export default function About({ data }) {
               <h2>22~</h2>
             </div>
           </div>
-          <div className="exp-item w-9/12 ml-auto">
+          <div
+            className="exp-item w-9/12 ml-auto"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-delay="500"
+          >
             <div className="details">
               <h2>Preply</h2>
               <h6>Computer Science Tutor</h6>
@@ -78,7 +107,12 @@ export default function About({ data }) {
               <h2>21~</h2>
             </div>
           </div>
-          <div className="exp-item w-full">
+          <div
+            className="exp-item w-full"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-delay="500"
+          >
             <div className="details">
               <h2>Sabanci University</h2>
               <h6>B.Sc Computer Science and Engineering</h6>

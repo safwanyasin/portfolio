@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const PlainButton = ({ dest, content }) => {
   const iconPath = process.env.PUBLIC_URL;
   return (
-    <div className="plain-button inline-flex">
+    <div className="plain-button inline-flex mt-4">
       {/* <motion.div
         // className="hovered2"
         animate={controls}

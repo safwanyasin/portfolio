@@ -14,7 +14,7 @@
       "imgSrc": "/images/about-banner.png",
       "miniTitle": [1000, "About Me"],
       "title": "I'm a developer based in Istanbul, Turkey",
-      "description": "While purusing a degree in Computer Science from Sabanci University, I am also working as a freelance application, software and web developer. Since, I am in my last semester, I'm activly searching for job opportunities in Europe, Turkey and UAE.",
+      "description": "While purusing a degree in Computer Science from Sabanci University, I am also working as a freelance application, software and web developer. Since, I am in my last semester, I'm activly searching for job opportunities, both remote and onsite. I am willing to relocate if needed.",
       "funfacts": [
         {
           "title": "Google Review",
@@ -35,6 +35,7 @@
     "work": {
 
       "title": "Selected Work",
+      "description": "An overview of some of the projects I have worked on. Visit my Github to see more!",
 
       "allProjects": [
         {
@@ -44,7 +45,7 @@
           "buttonLink": "https://github.com/safwanyasin/bookAI",
           "name": "TaleTuner - A Bookkeeping and AI Story Generation App built using DDD",
           "description":
-            "TaleTuner - A Bookkeeping and AI Story Generation App built using Flutter DDD",
+            "TaleTuner is an application that utilizes the Google Books API to act as a search engine for books. It allows you to search for books, view their detailed information and then add them to your reading list or wishlist. Furthermore, it uses the Gemini API to generate short stories based upon customized prompts entered by the user.\n The most notable feature of this application is that it was created using Flutter Domain Driven Design (DDD). DDD breaks down your application into 4 layers, namely: Domain, Application, Infrastructure, and Presentation. This allows for modularity and scalability within the application.\n Feel free to contact me if you wish to learn more about the power of Domain Driven Design!",
           "imageUrl": "https://prod.spline.design/xF6USS3srKGVjEO5/scene.splinecode"
         },
         {
@@ -53,7 +54,7 @@
           "buttonText": "View Code",
           "buttonLink": "https://github.com/safwanyasin/NottACafe",
           "name": "NottACafe - A Food Ordering App",
-          "description": "Nottacafe - A Food Ordering App build using Flutter",
+          "description": "NottACafe is a food ordering application that I built for a client for their university. The application allows you to sign up as a customer or a vendor, thus effectively allowing you order or sell food. It has a user-friendly interface with features like the ability to order food for instant or scheduled delivery, a beautiful light and dark theme, and much more! The app  was built using Flutter and utilizes providers for state management.",
           "imageUrl": "https://prod.spline.design/3BqexEOwVqzx486w/scene.splinecode"
         },
         {
@@ -62,7 +63,7 @@
           "buttonText": "View Code",
           "buttonLink": "https://github.com/safwanyasin/lightbulb",
           "name": "Lightbulb - An Educational Social Media App",
-          "description": "Lightbulb - An Eduactional Social App build using Flutter",
+          "description": "This app holds a special place in my heart since it was the first mobile application I created. LightBulb is an educational social media application that aims to transform the time you spend on social media into a learning experience. It allows users to create posts while also adding relevant tags for each post, watch and react to other users' posts and much more!",
           "imageUrl": "https://prod.spline.design/na9Rwn3vPI3LzBmw/scene.splinecode"
         },
         {
@@ -71,13 +72,13 @@
           "buttonText": "View Code",
           "buttonLink": "https://github.com/safwanyasin/gamehub",
           "name": "GameHub - An e-commerce web application for purchasing games",
-          "description": "GameHub - An e-commerce web application for purchasing games built using Vue.js"
+          "description": "GameHub is an e-commerce web application designed for purchasing games. It alows you to sign up as a customer or a vendor thereby allowing you to buy or sell games on the platform. The vendor side is accompanied by a complete admin dashboard that allows you to manage and track your sales, order more games that are out of stock from the warehouse etc. It provides users with the ability to buy games for multiple platforms, order tracking and a lot more. The web application was built using the Vue.js framework."
         }
       ],
       "futureProject": {
         "logo": "/stars.svg",
         "name": "Your project goes here",
-        "description": "Let's turn your idea into reality"
+        "description": "Let's turn your idea into reality!"
       }
 
     },
@@ -152,53 +153,8 @@
         }
 
       ]
-    },
-    "service": {
-      "sectionHeading": {
-        "miniTitle": "SERVICES",
-        "title": "Design <span>services</span> I am providing"
-      },
-      "allService": [
-        {
-          "imgUrl": "/images/service-01.jpg",
-          "title": "Website Design",
-          "subTitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.",
-          "icon": "bi:brush-fill",
-          "ratings": 5
-        },
-        {
-          "imgUrl": "/images/service-02.jpg",
-          "title": "Website Design",
-          "subTitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.",
-          "icon": "bi:code-square",
-          "ratings": 4.5
-        },
-        {
-          "imgUrl": "/images/service-03.jpg",
-          "title": "SEO Marketing",
-          "subTitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.",
-          "icon": "bi:speedometer2",
-          "ratings": 5
-        },
-        {
-          "imgUrl": "/images/service-04.jpg",
-          "title": "Graphic Design",
-          "subTitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.",
-          "icon": "bi:palette",
-          "ratings": 5
-        }
-      ]
-    },
-    "contact": {
-      "sectionHeading": {
-        "title": "Let’s Discuss Your Project",
-        "subTitle": "Always available for freelancing if the right project comes along, Feel free to contact me."
-      },
-      "contactImg": "/images/contact-us.png",
-      "contactInfo": [
-        { "title": "Write an e-mail", "email": "sample@domain.com" },
-        { "title": "write an e-mail", "tel": "+044 9696 9696 3636" }
-      ]
     }
+
+    
   }
   

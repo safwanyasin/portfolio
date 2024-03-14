@@ -28,6 +28,7 @@ export default function Layout() {
         <Outlet />
       </main>
       <BottomNavBar />
+      <Footer />
       {/* <CustomCursor /> */}
       {/* <Footer /> */}
     </>

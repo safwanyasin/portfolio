@@ -11,7 +11,7 @@ const WorkCard = ({
   buttonLink,
 }) => {
   return (
-    <div className="work-card">
+    <div className="work-card" data-aos="fade-down" data-aos-duration="1000">
       <div className="content">
         <div>
           <img className="logo" src={logoUrl} />
