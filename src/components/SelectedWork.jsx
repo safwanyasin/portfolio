@@ -1,5 +1,4 @@
 import React from "react";
-import { Link as ScrollLink } from "react-scroll";
 import WorkCard from "./WorkCard"; // Import the WorkCard component
 import FutureProjectCard from "./FutureProjectCard";
 

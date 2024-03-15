@@ -1,6 +1,5 @@
 import React from "react";
 import { motion, useAnimation } from "framer-motion";
-import { Link } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
 
 const ContactButton = () => {
@@ -29,7 +28,7 @@ const ContactButton = () => {
         initial={{ y: 0 }}
         exit={{ y: 0 }}
       > */}
-      <img src={iconPath + "/message.svg"} />
+      <img src={iconPath + "/message.svg"} alt="contact"/>
       <ScrollLink
         to="contact"
         spy={true}

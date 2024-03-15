@@ -1,6 +1,5 @@
 import React from "react";
 import { motion, useAnimation } from "framer-motion";
-import { Link } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
 
 const SecondaryButton = ({ dest, content }) => {

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import firebase from "firebase/compat/app";
 import "firebase/compat/firestore";
-import { Link } from "react-scroll";
 
 const Contact = () => {
   const [email, setEmail] = useState("");
@@ -189,10 +188,11 @@ const Contact = () => {
       >
         <ul className="socials">
           <li>
-            <a href="mailto:msafwan@sabanciuniv.edu" target="_blank">
+            <a href="mailto:msafwan@sabanciuniv.edu" target="_blank" rel="noreferrer">
               <img
-                src={iconPath + "nav-bar-icons/contact.svg"}
+                src={iconPath + "/nav-bar-icons/contact.svg"}
                 className="nav-icon"
+                alt="contact"
               />
             </a>
           </li>
@@ -239,8 +239,9 @@ const Contact = () => {
             <a
               href="https://www.upwork.com/freelancers/~010406e4270587a14a"
               target="_blank"
+              rel="noreferrer"
             >
-              <img src={iconPath + "/upwork.svg"} className="nav-icon" />
+              <img src={iconPath + "/upwork.svg"} className="nav-icon" alt="upwork"/>
             </a>
           </li>
         </ul>

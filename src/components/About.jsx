@@ -1,12 +1,7 @@
 // import { Icon } from '@iconify/react';
 import React from "react";
-import { TypeAnimation } from "react-type-animation";
-import { Link as ScrollLink } from "react-scroll";
-import { getCurrentlyPlayingTracks } from "./GetCurrentlyPlayingItem";
-import { SpotifyNowPlaying } from "./SpotifyNowPlaying";
-import WorkCard from "./WorkCard";
 export default function About({ data }) {
-  const { imgSrc, title, miniTitle, description } = data;
+  const { title, description } = data;
   const iconPath = process.env.PUBLIC_URL;
   return (
     <section
@@ -17,7 +12,7 @@ export default function About({ data }) {
       <div className="">
         <div className="intro">
           <div className="avatar">
-            <img src={iconPath + "/avatar.svg"} />
+            <img src={iconPath + "/avatar.webp"} alt="avatar" />
           </div>
           <div className="about-text flex flex-col justify-center align-middle">
             {/* Left hs-text-box */}
@@ -53,7 +48,7 @@ export default function About({ data }) {
         <div className="experience">
           <div
             className="exp-item ml-auto w-1/4"
-            data-aos="fade-left"
+            data-aos="fade"
             data-aos-duration="1000"
             data-aos-delay="500"
           >
@@ -67,7 +62,7 @@ export default function About({ data }) {
           </div>
           <div
             className="exp-item w-1/2 shield"
-            data-aos="fade-left"
+            data-aos="fade"
             data-aos-duration="1000"
             data-aos-delay="500"
           >
@@ -81,7 +76,7 @@ export default function About({ data }) {
           </div>
           <div
             className="exp-item w-1/2 ml-auto"
-            data-aos="fade-left"
+            data-aos="fade"
             data-aos-duration="1000"
             data-aos-delay="500"
           >
@@ -95,7 +90,7 @@ export default function About({ data }) {
           </div>
           <div
             className="exp-item w-9/12 ml-auto"
-            data-aos="fade-left"
+            data-aos="fade"
             data-aos-duration="1000"
             data-aos-delay="500"
           >
@@ -109,7 +104,7 @@ export default function About({ data }) {
           </div>
           <div
             className="exp-item w-full"
-            data-aos="fade-left"
+            data-aos="fade"
             data-aos-duration="1000"
             data-aos-delay="500"
           >

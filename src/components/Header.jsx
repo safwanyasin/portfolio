@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { TypeAnimation } from "react-type-animation";
-import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Link as ScrollLink } from "react-scroll";
 

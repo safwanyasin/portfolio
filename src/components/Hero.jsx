@@ -77,12 +77,12 @@
 // import { Icon } from '@iconify/react';
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
-import { Link as ScrollLink } from "react-scroll";
-import { getCurrentlyPlayingTracks } from "./GetCurrentlyPlayingItem";
-import { SpotifyNowPlaying } from "./SpotifyNowPlaying";
+// import { Link as ScrollLink } from "react-scroll";
+// import { getCurrentlyPlayingTracks } from "./GetCurrentlyPlayingItem";
+// import { SpotifyNowPlaying } from "./SpotifyNowPlaying";
 import PrimaryButton from "./PrimaryButton";
 import { motion } from "framer-motion";
-import Stats from "./Stats";
+// import Stats from "./Stats";
 import SecondaryButton from "./SecondaryButton";
 
 // export default function Hero({ data, socialData }) {
@@ -176,14 +176,9 @@ import SecondaryButton from "./SecondaryButton";
 
 export default function Hero({ data }) {
   const {
-    imgUrl,
     status,
-    name,
-    typingText,
     typingTextSecondary,
     description,
-    btnText,
-    btnUrl,
   } = data;
   return (
     <section

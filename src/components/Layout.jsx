@@ -7,16 +7,7 @@ import BottomNavBar from "./BottomNavBar";
 
 export default function Layout() {
   const {
-    hero,
     logo,
-    socialBtns,
-    brands,
-    about,
-    projects,
-    service,
-    experience,
-    testimonial,
-    contact,
   } = HomePageData;
   useEffect(() => {
     window.scrollTo(0, 0);

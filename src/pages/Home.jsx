@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Hero from "../components/Hero";
 import HomePageData from "../data/HomePageData.json";
 import Blob from "../components/Blob";
@@ -8,11 +8,10 @@ import AmbiencePink from "../components/AmbiencePink";
 import AmbienceGreen from "../components/AmbienceGreen";
 import About from "../components/About";
 import SelecetedWork from "../components/SelectedWork";
-import TechStackCard from "../components/TechStackCard";
 import TechStack from "../components/TechStack";
 import Contact from "../components/Contact";
 export default function Home() {
-  const { hero, about, work, knowledge, socialBtns } = HomePageData;
+  const { hero, about, work, knowledge } = HomePageData;
   return (
     <>
       <BackgroundContainer>

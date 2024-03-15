@@ -20,6 +20,7 @@ function App() {
   
   // Initialize Firebase
   const app = firebase.initializeApp(firebaseConfig);
+  console.log("Hey Devleopers!")
   useEffect(() => {
     Aos.init({
       once: true,
@@ -27,9 +28,9 @@ function App() {
   }, []);
   return (
     <Routes>
-      <Route path="/" element={<Layout />}>
+      <Route path="/home" element={<Layout />}>
         <Route index element={<Home />} />
-        <Route path="about" element={<AboutMe />} />
+        {/* <Route path="about" element={<AboutMe />} /> */}
       </Route>
     </Routes>
   );

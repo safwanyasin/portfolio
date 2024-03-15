@@ -1,11 +1,10 @@
-import querystring from 'querystring';
 import SpotifyWebApi from 'spotify-web-api-js';
 
 const client_id = process.env.REACT_APP_SPOTIFY_CLIENT_ID;
 const client_secret = process.env.REACT_APP_SPOTIFY_CLIENT_SECRET;
-const refresh_token = process.env.REACT_APP_SPOTIFY_REFRESH_TOKEN;
+// const refresh_token = process.env.REACT_APP_SPOTIFY_REFRESH_TOKEN;
 
-const basic = btoa(`${client_id}:${client_secret}`);
+// const basic = btoa(`${client_id}:${client_secret}`);
 const TOKEN_ENDPOINT = `https://accounts.spotify.com/api/token`;
 
 const getAccessToken = async () => {

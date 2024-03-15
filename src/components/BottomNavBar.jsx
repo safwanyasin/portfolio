@@ -1,14 +1,13 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React from "react";
 import { motion } from "framer-motion";
 import { Link as ScrollLink } from "react-scroll";
 
-const BottomNavBar = ({ data }) => {
-  const [activeItem, setActiveItem] = useState(null);
+const BottomNavBar = () => {
+  // const [activeItem, setActiveItem] = useState(null);
 
-  const handleItemClick = (itemName) => {
-    setActiveItem(itemName);
-  };
+  // const handleItemClick = (itemName) => {
+  //   setActiveItem(itemName);
+  // };
 
   const iconPath = process.env.PUBLIC_URL + "/nav-bar-icons/";
 
@@ -54,7 +53,7 @@ const BottomNavBar = ({ data }) => {
                 smooth={true}
                 offset={-80}
                 duration={500}
-                onMouseEnter={() => handleItemClick(item.id)}
+                // onMouseEnter={() => handleItemClick(item.id)}
               >
                 <img
                   src={iconPath + item.icon}

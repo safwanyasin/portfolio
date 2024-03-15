@@ -44,8 +44,8 @@ const Stats = () => {
         // Update state with the total time
         setHours(Math.floor(totalSeconds / 3600));
         setMinutes(Math.floor((totalSeconds % 3600) / 60));
-        const controlHours = animate(countHours, hours);
-        const controlMinutes = animate(countMinutes, minutes);
+        // const controlHours = animate(countHours, hours);
+        // const controlMinutes = animate(countMinutes, minutes);
       }
     });
   }, []);

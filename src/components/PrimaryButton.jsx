@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 
 const PrimaryButton = ({ dest, content }) => {
   const controls = useAnimation();
-  const controlsL = useAnimation();
-  const controlsR = useAnimation();
+  // const controlsL = useAnimation();
+  // const controlsR = useAnimation();
 
   const handleHover = (isHovered) => {
     // controlsL.start({

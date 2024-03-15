@@ -46,7 +46,7 @@
           "name": "TaleTuner - A Bookkeeping and AI Story Generation App built using DDD",
           "description":
             "TaleTuner is an application that utilizes the Google Books API to act as a search engine for books. It allows you to search for books, view their detailed information and then add them to your reading list or wishlist. Furthermore, it uses the Gemini API to generate short stories based upon customized prompts entered by the user.\n The most notable feature of this application is that it was created using Flutter Domain Driven Design (DDD). DDD breaks down your application into 4 layers, namely: Domain, Application, Infrastructure, and Presentation. This allows for modularity and scalability within the application.\n Feel free to contact me if you wish to learn more about the power of Domain Driven Design!",
-          "imageUrl": "https://prod.spline.design/xF6USS3srKGVjEO5/scene.splinecode"
+          "imageUrl": "/taletuner_ss.png"
         },
         {
           "id": "nottacafe",
@@ -55,7 +55,7 @@
           "buttonLink": "https://github.com/safwanyasin/NottACafe",
           "name": "NottACafe - A Food Ordering App",
           "description": "NottACafe is a food ordering application that I built for a client for their university. The application allows you to sign up as a customer or a vendor, thus effectively allowing you order or sell food. It has a user-friendly interface with features like the ability to order food for instant or scheduled delivery, a beautiful light and dark theme, and much more! The app  was built using Flutter and utilizes providers for state management.",
-          "imageUrl": "https://prod.spline.design/3BqexEOwVqzx486w/scene.splinecode"
+          "imageUrl": "/nottacafe_ss.png"
         },
         {
           "id": "lightbulb",
@@ -64,7 +64,7 @@
           "buttonLink": "https://github.com/safwanyasin/lightbulb",
           "name": "Lightbulb - An Educational Social Media App",
           "description": "This app holds a special place in my heart since it was the first mobile application I created. LightBulb is an educational social media application that aims to transform the time you spend on social media into a learning experience. It allows users to create posts while also adding relevant tags for each post, watch and react to other users' posts and much more!",
-          "imageUrl": "https://prod.spline.design/na9Rwn3vPI3LzBmw/scene.splinecode"
+          "imageUrl": "/lightbulb_ss.png"
         },
         {
           "id": "gamehub",
@@ -72,7 +72,8 @@
           "buttonText": "View Code",
           "buttonLink": "https://github.com/safwanyasin/gamehub",
           "name": "GameHub - An e-commerce web application for purchasing games",
-          "description": "GameHub is an e-commerce web application designed for purchasing games. It alows you to sign up as a customer or a vendor thereby allowing you to buy or sell games on the platform. The vendor side is accompanied by a complete admin dashboard that allows you to manage and track your sales, order more games that are out of stock from the warehouse etc. It provides users with the ability to buy games for multiple platforms, order tracking and a lot more. The web application was built using the Vue.js framework."
+          "description": "GameHub is an e-commerce web application designed for purchasing games. It alows you to sign up as a customer or a vendor thereby allowing you to buy or sell games on the platform. The vendor side is accompanied by a complete admin dashboard that allows you to manage and track your sales, order more games that are out of stock from the warehouse etc. It provides users with the ability to buy games for multiple platforms, order tracking and a lot more. The web application was built using the Vue.js framework.",
+          "imageUrl": ""
         }
       ],
       "futureProject": {
