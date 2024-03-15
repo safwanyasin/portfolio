@@ -175,11 +175,7 @@ import SecondaryButton from "./SecondaryButton";
 // }
 
 export default function Hero({ data }) {
-  const {
-    status,
-    typingTextSecondary,
-    description,
-  } = data;
+  const { status, typingTextSecondary, description } = data;
   return (
     <section
       className="home-section flex-col h-screen justify-center items-center flex"
@@ -256,7 +252,9 @@ export default function Hero({ data }) {
 
         <div className="container mt-5 ">
           <PrimaryButton
-            dest={"https://www.google.com"}
+            dest={
+              "https://drive.google.com/file/d/1k3T1cqAjMhFc3g8_XRJp1r00Y-y1mS4r/view"
+            }
             content={"See my resume"}
           />
           <SecondaryButton dest={"contact"} content={"Get in touch"} />
