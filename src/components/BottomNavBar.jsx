@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Link as ScrollLink } from "react-scroll";
+import { Link } from "react-router-dom";
 
 const BottomNavBar = () => {
   // const [activeItem, setActiveItem] = useState(null);
@@ -45,24 +46,36 @@ const BottomNavBar = () => {
     >
       <div className="block navbar">
         <ul className="flex justify-between items-center">
-          {navbarItems.map((item) => (
-            <li key={item.id}>
-              <ScrollLink
-                to={item.link}
-                spy={true}
-                smooth={true}
-                offset={-80}
-                duration={500}
-                // onMouseEnter={() => handleItemClick(item.id)}
-              >
-                <img
-                  src={iconPath + item.icon}
-                  alt={item.alt}
-                  className="nav-icon"
-                />
-              </ScrollLink>
-            </li>
-          ))}
+          {navbarItems.map((item) =>
+            item.alt == "Github" || item.alt == "LinkedIn" ? (
+              <li key={item.id}>
+                <Link to={item.link}>
+                  <img
+                    src={iconPath + item.icon}
+                    alt={item.alt}
+                    className="nav-icon"
+                  />
+                </Link>
+              </li>
+            ) : (
+              <li key={item.id}>
+                <ScrollLink
+                  to={item.link}
+                  spy={true}
+                  smooth={true}
+                  offset={-80}
+                  duration={500}
+                  // onMouseEnter={() => handleItemClick(item.id)}
+                >
+                  <img
+                    src={iconPath + item.icon}
+                    alt={item.alt}
+                    className="nav-icon"
+                  />
+                </ScrollLink>
+              </li>
+            )
+          )}
         </ul>
       </div>
     </motion.div>
