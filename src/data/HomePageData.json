@@ -49,6 +49,15 @@
           "imageUrl": "/taletuner_ss.png"
         },
         {
+            "id": "moqah.pk",
+            "logo_url": "nottacafe_logo.png",
+            "buttonText": "Visit Site",
+            "buttonLink": "https://www.moqah.pk",
+            "name": "Moqah.pk - Pakistan's first event finding platform",
+            "description": "Moqah.pk is Pakistan's first event finding platform. Currently, in its development phase, it is set out to be a platform that would allow users to search and register for all kinds of events across Pakistan - from online seminars to concerts."
+            "imageUrl": "/moqah_ss.png"
+        },
+        {
           "id": "nottacafe",
           "logoUrl": "nottacafe_logo.png",
           "buttonText": "View Code",
