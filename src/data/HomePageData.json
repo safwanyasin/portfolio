@@ -76,6 +76,15 @@
           "imageUrl": "/lightbulb_ss.png"
         },
         {
+          "id": "final_project",
+          "logoUrl": "",
+          "buttonText": "View Code",
+          "buttonLink": "https://github.com/safwanyasin/final_project",
+          "name": "Graduation Project - A prototype for a self following luggage platform",
+          "description": "As part of my graduation project at Sabanci University, my groupmates and I developed a prototype for a self following luggage platform that would follow its owner. The hardware for the platform was designed by my groupmates and I was responsible for desgining the software for the system. The project combines aspects of machine learning and computer vision to enable the robot to follow its owner based on the input from a stereoscopic camera.",
+          "imageUrl": ""
+        },
+        {
           "id": "gamehub",
           "logoUrl": "gamehub_logo.png",
           "buttonText": "View Code",

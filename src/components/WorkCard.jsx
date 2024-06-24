@@ -16,7 +16,9 @@ const WorkCard = ({
       <div className="work-card" data-aos="fade-down" data-aos-duration="1000">
         <div className="content">
           <div>
-            <img className="logo" src={logoUrl} alt={logoUrl} />
+            {logoUrl !== "" && (
+              <img className="logo" src={logoUrl} alt={logoUrl} />
+            )}
             <h2 className="name">{name}</h2>
             <p className="description">{description}</p>
           </div>
