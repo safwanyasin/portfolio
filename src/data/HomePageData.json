@@ -45,16 +45,16 @@
           "buttonLink": "https://github.com/safwanyasin/bookAI",
           "name": "TaleTuner - A Bookkeeping and AI Story Generation App built using DDD",
           "description":
-            "TaleTuner is an application that utilizes the Google Books API to act as a search engine for books. It allows you to search for books, view their detailed information and then add them to your reading list or wishlist. Furthermore, it uses the Gemini API to generate short stories based upon customized prompts entered by the user.\n The most notable feature of this application is that it was created using Flutter Domain Driven Design (DDD). DDD breaks down your application into 4 layers, namely: Domain, Application, Infrastructure, and Presentation. This allows for modularity and scalability within the application.\n Feel free to contact me if you wish to learn more about the power of Domain Driven Design!",
+            "TaleTuner is an application that utilizes the Google Books API to act as a search engine for books. It allows you to search for books, view their detailed information and then add them to your reading list or wishlist. Furthermore, it uses the Gemini API to generate short stories based upon customized prompts entered by the user.\n The most notable feature of this application is that it was created using Flutter Domain Driven Design (DDD). DDD breaks down your application into 4 layers, namely: Domain, Application, Infrastructure, and Presentation. This allows for modularity and scalability within the application.\n Feel free to contact me if you wish to learn more about the power of Domain Driven Design!\n\nIn a future project, I also converted this application into a cloud application where all the backend was hosted on Google Cloud Platform. The backend utilized a microservices architecture. Each microservice ran on a dedicated cloud function with load balancers put in place for each of them to prevent overloading.",
           "imageUrl": "/taletuner_ss.png"
         },
         {
             "id": "moqah.pk",
-            "logo_url": "nottacafe_logo.png",
+            "logoUrl": "moqah_logo.png",
             "buttonText": "Visit Site",
             "buttonLink": "https://www.moqah.pk",
             "name": "Moqah.pk - Pakistan's first event finding platform",
-            "description": "Moqah.pk is Pakistan's first event finding platform. Currently, in its development phase, it is set out to be a platform that would allow users to search and register for all kinds of events across Pakistan - from online seminars to concerts."
+            "description": "Moqah.pk is Pakistan's first event finding platform. Currently, in its development phase, it is set out to be a platform that would allow users to search and register for all kinds of events across Pakistan - from online seminars to concerts.",
             "imageUrl": "/moqah_ss.png"
         },
         {
