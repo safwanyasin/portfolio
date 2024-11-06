@@ -46,6 +46,20 @@ export default function About({ data }) {
           </div>
         </div>
         <div className="experience">
+        <div
+            className="exp-item ml-auto w-1/4"
+            data-aos="fade"
+            data-aos-duration="1000"
+            data-aos-delay="500"
+          >
+            <div className="details">
+              <h2>Cubtale</h2>
+              <h6>Frontend Developer</h6>
+            </div>
+            <div className="time">
+              <h2>24~</h2>
+            </div>
+          </div>
           <div
             className="exp-item ml-auto w-1/4"
             data-aos="fade"
