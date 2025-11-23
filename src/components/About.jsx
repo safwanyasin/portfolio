@@ -53,11 +53,25 @@ export default function About({ data }) {
             data-aos-delay="500"
           >
             <div className="details">
+              <h2>RV Travel Health GmbH</h2>
+              <h6>Full-Stack Developer</h6>
+            </div>
+            <div className="time">
+              <h2>25~</h2>
+            </div>
+          </div>
+        <div
+            className="exp-item ml-auto w-1/4"
+            data-aos="fade"
+            data-aos-duration="1000"
+            data-aos-delay="500"
+          >
+            <div className="details">
               <h2>Cubtale</h2>
               <h6>Frontend Developer</h6>
             </div>
             <div className="time">
-              <h2>24~</h2>
+              <h2>24-25</h2>
             </div>
           </div>
           <div

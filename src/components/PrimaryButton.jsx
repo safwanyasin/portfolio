@@ -2,7 +2,7 @@ import React from "react";
 import { motion, useAnimation } from "framer-motion";
 import { Link } from "react-router-dom";
 
-const PrimaryButton = ({ dest, content }) => {
+const PrimaryButton = ({ dest, content, openInNewTab = false }) => {
   const controls = useAnimation();
   // const controlsL = useAnimation();
   // const controlsR = useAnimation();
@@ -30,9 +30,15 @@ const PrimaryButton = ({ dest, content }) => {
         initial={{ y: 0 }}
         exit={{ y: 0 }}
       > */}
-      <Link to={dest} offset={-80} duration={500}>
-        <h6>{content}</h6>
-      </Link>
+      {openInNewTab ? (
+        <a href={dest} target="_blank" rel="noopener noreferrer">
+          <h6>{content}</h6>
+        </a>
+      ) : (
+        <Link to={dest} offset={-80} duration={500}>
+          <h6>{content}</h6>
+        </Link>
+      )}
 
       {/* </motion.div> */}
     </motion.div>

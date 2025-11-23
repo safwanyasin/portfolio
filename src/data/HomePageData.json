@@ -2,19 +2,19 @@
     "logo": [1000, "Safwan."],
     "hero": {
       "imgUrl": "/images/home-banner.png",
-      "status": "Actively looking for work",
+      "status": "Available for work",
       "name": "M Safwan Yasin",
       "typingText": [1000, "software", 1000, "Web", 1000, "App", 1000],
       "typingTextSecondary": [1000, "Web", 1000, "App", 1000, "Software", 1000],
-      "description": "I am passionate about creating experiences that are engaging and user centric. Currently hunting for roles in software, frontend and mobile app development, I bring a blend of creativity and technical skills. Check out my portfolio for a glimpse of my passion in action!",
+      "description": "I am passionate about creating experiences that are engaging and user centric. Currently hunting for roles in software, full-stack, frontend and mobile app development, I bring a blend of creativity and technical skills. Check out my portfolio for a glimpse of my passion in action!",
       "btnText": "Get in touch",
       "btnUrl": "contactus"
     },
     "about": {
       "imgSrc": "/images/about-banner.png",
       "miniTitle": [1000, "About Me"],
-      "title": "I'm a developer based in Istanbul, Turkey",
-      "description": "While pursuing a degree in Computer Science from Sabanci University, I am also working as a freelance application, software and web developer. Since, I am in my last semester, I'm actively searching for job opportunities, both remote and onsite. I am willing to relocate if needed.",
+      "title": "I'm a developer based in Hamburg, Germany",
+      "description": "While pursuing a Masters degree in Data Science and Artificial Intelligence, and holding a degree in Computer Science from Sabanci University, I am also working as a full-stack developer at RV Travel Health.",
       "btnText": "Get in touch",
       "btnUrl": "contactus"
     },
@@ -130,6 +130,11 @@
           "logo": "/spline.svg",
           "name": "Spline",
           "type": "Animation"
+        },
+        {
+          "logo": "/django.svg",
+          "name": "Django Rest Framework",
+          "type": "API Framework"
         },
         {
           "logo": "/firebase.svg",
