@@ -253,7 +253,7 @@ export default function Hero({ data }) {
         <div className="container mt-5 ">
           <PrimaryButton
             dest={
-              "https://drive.google.com/file/d/10ITtnGGmEHFqTQZ6RAPRyFLIHgZ0n0R6/view?usp=sharing"
+              "https://drive.google.com/file/d/10ITtnGGmEHFqTQZ6RAPRyFLIHgZ0n0R6/view?usp=drive_link"
             }
             content={"See my resume"}
             openInNewTab={true}
